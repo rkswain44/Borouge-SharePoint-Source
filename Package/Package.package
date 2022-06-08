@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0a0ec5b6-8f48-4150-8c3c-2d69c7898d1a" solutionId="0a0ec5b6-8f48-4150-8c3c-2d69c7898d1a" resetWebServer="false" sharePointProductVersion="19.0" name="Borouge.Internet.Main" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Borouge.Internet.Common.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Borouge.Internet.Common\bin\Debug\Borouge.Internet.Common.dll" />
+    <customAssembly location="Borouge.Internet.DTO.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\Borouge.Internet.DTO\bin\Debug\Borouge.Internet.DTO.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="715450d1-68cb-4d00-8cf7-fd25a17ec454" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="63610c0d-37af-4c4b-907f-9a62caf8986f" />
+    <projectItemReference itemId="842861f4-30a8-4215-abb2-4d277e4ce2c7" />
+  </projectItems>
+</package>

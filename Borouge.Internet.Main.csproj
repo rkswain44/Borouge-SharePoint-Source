@@ -1,0 +1,304 @@
+﻿<Project ToolsVersion="16.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D98A593D-9BBB-417B-82F2-4F4EE13ED74C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Borouge.Internet.Main</RootNamespace>
+    <AssemblyName>Borouge.Internet.Main</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetOfficeVersion>19.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
+    <SandboxedSolution>False</SandboxedSolution>
+    <TargetFrameworkProfile />
+   <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+   <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Borouge.Internet.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=544352e34e300e73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Borouge.Internet.Common\bin\Debug\Borouge.Internet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Borouge.Internet.DTO, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84517d4f892c6d8c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Borouge.Internet.DTO\bin\Debug\Borouge.Internet.DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\Internet.Main\App_LocalResources\UCMenu.ascx.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UCMenu.ascx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\Internet.Main\UCFooter.ascx.cs">
+      <DependentUpon>UCFooter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\Internet.Main\UCFooter.ascx.designer.cs">
+      <DependentUpon>UCFooter.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\Internet.Main\UCMenu.ascx.cs">
+      <DependentUpon>UCMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\Internet.Main\UCMenu.ascx.designer.cs">
+      <DependentUpon>UCMenu.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTTPModules\HTTPSwitcherModule.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\Home\CreativePolymerSolutionsWP\App_LocalResources\CreativePolymerSolutionsWPUserControl.acsx.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreativePolymerSolutionsWPUserControl.acsx.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWP.cs" />
+    <Compile Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWPUserControl.ascx.cs">
+      <DependentUpon>CreativePolymerSolutionsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWPUserControl.ascx.designer.cs">
+      <DependentUpon>CreativePolymerSolutionsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\EveryDayLifeWP\EveryDayLifeWP.ascx.cs">
+      <DependentUpon>EveryDayLifeWP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\EveryDayLifeWP\EveryDayLifeWP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EveryDayLifeWP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWP.cs" />
+    <Compile Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWPUserControl.ascx.cs">
+      <DependentUpon>InvestorRelationsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWPUserControl.ascx.designer.cs">
+      <DependentUpon>InvestorRelationsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\KeyHighlightsWP\KeyHighlightsWP.cs" />
+    <Compile Include="WebParts\Home\KeyHighlightsWP\KeyHighlightsWPUserControl.ascx.cs">
+      <DependentUpon>KeyHighlightsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\KeyHighlightsWP\KeyHighlightsWPUserControl.ascx.designer.cs">
+      <DependentUpon>KeyHighlightsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\LatestNewsWP\LatestNewsWP.cs" />
+    <Compile Include="WebParts\Home\LatestNewsWP\LatestNewsWPUserControl.ascx.cs">
+      <DependentUpon>LatestNewsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\LatestNewsWP\LatestNewsWPUserControl.ascx.designer.cs">
+      <DependentUpon>LatestNewsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\PeopleInnovationWP\PeopleInnovationWP.cs" />
+    <Compile Include="WebParts\Home\PeopleInnovationWP\PeopleInnovationWPUserControl.ascx.cs">
+      <DependentUpon>PeopleInnovationWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\PeopleInnovationWP\PeopleInnovationWPUserControl.ascx.designer.cs">
+      <DependentUpon>PeopleInnovationWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\PositiveImpactWP\PositiveImpactWP.cs" />
+    <Compile Include="WebParts\Home\PositiveImpactWP\PositiveImpactWPUserControl.ascx.cs">
+      <DependentUpon>PositiveImpactWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\PositiveImpactWP\PositiveImpactWPUserControl.ascx.designer.cs">
+      <DependentUpon>PositiveImpactWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Home\PublicationWP\PublicationWP.cs" />
+    <Compile Include="WebParts\Home\PublicationWP\PublicationWPUserControl.ascx.cs">
+      <DependentUpon>PublicationWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\PublicationWP\PublicationWPUserControl.ascx.designer.cs">
+      <DependentUpon>PublicationWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63610c0d-37af-4c4b-907f-9a62caf8986f}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{715450d1-68cb-4d00-8cf7-fd25a17ec454}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{842861f4-30a8-4215-abb2-4d277e4ce2c7}</SharePointProjectItemId>
+    </None>
+    <None Include="obj\Debug\Borouge.Internet.Main.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+    <None Include="packages\NLog.5.0.0\.signature.p7s" />
+    <None Include="packages\NLog.5.0.0\NLog.5.0.0.nupkg" />
+    <None Include="Package\Package.package">
+      <PackageId>{0a0ec5b6-8f48-4150-8c3c-2d69c7898d1a}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWP.webpart" />
+    <None Include="WebParts\Home\CreativePolymerSolutionsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{414f3873-db50-47f7-8090-2d524ddd6f25}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Home\EveryDayLifeWP\EveryDayLifeWP.webpart" />
+    <None Include="WebParts\Home\EveryDayLifeWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6e696d74-f5f5-4991-a47a-4ff14d823ed0}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWP.webpart" />
+    <None Include="WebParts\Home\InvestorRelationsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fe952251-9253-4843-ba7f-0472ae0ea00f}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Home\KeyHighlightsWP\KeyHighlightsWP.webpart" />
+    <None Include="WebParts\Home\KeyHighlightsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{15c92818-ceba-40c5-bba6-63b07b9d8433}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Home\LatestNewsWP\LatestNewsWP.webpart" />
+    <None Include="WebParts\Home\LatestNewsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{facd939e-0832-4e4b-9a57-e35c95d3e4f7}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Home\PeopleInnovationWP\PeopleInnovationWP.webpart" />
+    <None Include="WebParts\Home\PeopleInnovationWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{738ef276-5977-4dd0-bfd1-b4f27e09a470}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Home\PositiveImpactWP\PositiveImpactWP.webpart" />
+    <None Include="WebParts\Home\PositiveImpactWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3437c65e-0877-4558-acdd-5fa060dfc441}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Home\PublicationWP\PublicationWP.webpart" />
+    <None Include="WebParts\Home\PublicationWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b0dc1141-0dca-4245-b546-a232d2e32198}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+    <Folder Include="Layouts\Intranet\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="WebParts\Eservices\" />
+    <Folder Include="WebParts\IndustrySolutions\" />
+    <Folder Include="WebParts\Innovations\" />
+    <Folder Include="WebParts\InvestorRelations\" />
+    <Folder Include="WebParts\MediaCenter\" />
+    <Folder Include="WebParts\OurPeople\" />
+    <Folder Include="WebParts\OurSolution\" />
+    <Folder Include="WebParts\Sustainbility\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CONTROLTEMPLATES\Internet.Main\UCFooter.ascx" />
+    <Content Include="CONTROLTEMPLATES\Internet.Main\UCMenu.ascx" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="packages\NLog.5.0.0\lib\net35\NLog.dll" />
+    <Content Include="packages\NLog.5.0.0\lib\net35\NLog.xml" />
+    <Content Include="packages\NLog.5.0.0\lib\net45\NLog.dll" />
+    <Content Include="packages\NLog.5.0.0\lib\net45\NLog.xml" />
+    <Content Include="packages\NLog.5.0.0\lib\net46\NLog.dll" />
+    <Content Include="packages\NLog.5.0.0\lib\net46\NLog.xml" />
+    <Content Include="packages\NLog.5.0.0\lib\netstandard1.3\NLog.dll" />
+    <Content Include="packages\NLog.5.0.0\lib\netstandard1.3\NLog.xml" />
+    <Content Include="packages\NLog.5.0.0\lib\netstandard1.5\NLog.dll" />
+    <Content Include="packages\NLog.5.0.0\lib\netstandard1.5\NLog.xml" />
+    <Content Include="packages\NLog.5.0.0\lib\netstandard2.0\NLog.dll" />
+    <Content Include="packages\NLog.5.0.0\lib\netstandard2.0\NLog.xml" />
+    <Content Include="packages\NLog.5.0.0\N.png" />
+    <Content Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWPUserControl.ascx" />
+    <Content Include="WebParts\Home\CreativePolymerSolutionsWP\Elements.xml" />
+    <Content Include="WebParts\Home\EveryDayLifeWP\Elements.xml" />
+    <Content Include="WebParts\Home\EveryDayLifeWP\EveryDayLifeWP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>EveryDayLifeWP.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\Home\InvestorRelationsWP\Elements.xml" />
+    <Content Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWPUserControl.ascx" />
+    <Content Include="WebParts\Home\KeyHighlightsWP\Elements.xml" />
+    <Content Include="WebParts\Home\KeyHighlightsWP\KeyHighlightsWPUserControl.ascx" />
+    <Content Include="WebParts\Home\LatestNewsWP\Elements.xml" />
+    <Content Include="WebParts\Home\LatestNewsWP\LatestNewsWPUserControl.ascx" />
+    <Content Include="WebParts\Home\PeopleInnovationWP\Elements.xml" />
+    <Content Include="WebParts\Home\PeopleInnovationWP\PeopleInnovationWPUserControl.ascx" />
+    <Content Include="WebParts\Home\PositiveImpactWP\Elements.xml" />
+    <Content Include="WebParts\Home\PositiveImpactWP\PositiveImpactWPUserControl.ascx" />
+    <Content Include="WebParts\Home\PublicationWP\Elements.xml" />
+    <Content Include="WebParts\Home\PublicationWP\PublicationWPUserControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CONTROLTEMPLATES\Internet.Main\App_LocalResources\UCMenu.ascx.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UCMenu.ascx.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CONTROLTEMPLATES\Internet.Main\App_LocalResources\UCMenu.ascx.ar-SA.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WebParts\Home\CreativePolymerSolutionsWP\App_LocalResources\CreativePolymerSolutionsWPUserControl.acsx.ar-SA.resx" />
+    <EmbeddedResource Include="WebParts\Home\CreativePolymerSolutionsWP\App_LocalResources\CreativePolymerSolutionsWPUserControl.acsx.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreativePolymerSolutionsWPUserControl.acsx.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

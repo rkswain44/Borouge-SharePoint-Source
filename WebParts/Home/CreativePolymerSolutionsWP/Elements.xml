@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CreativePolymerSolutionsWP" List="113" Url="_catalogs/wp">
+    <File Path="CreativePolymerSolutionsWP\CreativePolymerSolutionsWP.webpart" Url="Borouge.Internet.Main_CreativePolymerSolutionsWP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Home" />
+    </File>
+  </Module>
+</Elements>
