@@ -20,16 +20,16 @@
           </div>
           <div class="row">
             <div class="col-12">
-              <div class="video-banner mb-3"><img class="video-banner__img" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/bg-video.jpg" alt="">
+              <div class="video-banner mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><img class="video-banner__img" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/bg-video.jpg" alt="">
                 <button class="btn btn--circle btn--circle-large bg-white position-absolute top-50 start-50 translate-middle video-banner__play" data-bs-toggle="modal" data-bs-target=".video-banner-modal"><span class="ic ic-48 ic-play"></span></button>
               </div>
             </div>
           </div>
-          <div class="row">
+        <div class="row">
             <div class="col-12">
-              <h3 class="mb-1">Lorem Ipsum Dolor Esit.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Est viverra in odio volutpat aliquet um.</p>
-              <div class="text-center mt-3">
+              <h3 class="mb-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Lorem Ipsum Dolor Esit.</h3>
+              <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Est viverra in odio volutpat aliquet um.</p>
+              <div class="text-center mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                 <div class="btn btn--primary text-uppercase">Find Out More</div>
               </div>
             </div>

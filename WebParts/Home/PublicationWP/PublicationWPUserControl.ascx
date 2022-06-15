@@ -9,13 +9,14 @@
 
 
 
+
 <div class="placeholder placeholder--bg-cyan placeholder--no-padding">
-      <section class="three-cards-swiper downloads-publications-swiper bg-light-grey py-10 px-1">
+      <section class="three-cards-swiper downloads-publications-swiper bg-light-grey py-10 px-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <div class="container-fluid position-relative">
           <div class="row justify-content-center mb-4">
             <div class="col-md-7 text-center">
-              <h2 class="fw-semi mb-3">Downloads<span class="fw-normal"> & Publications</span></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Et tincidunt odio et nulla vitae eget pellentesque.</p>
+              <h2 class="fw-semi mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"> Downloads<span class="fw-normal"> & Publications</span></h2>
+              <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Et tincidunt odio et nulla vitae eget pellentesque.</p>
             </div>
           </div>
           <div class="row">
@@ -26,7 +27,7 @@
                   <div class="swiper-custom-next swiper-arrow"></div>
                 </div>
                 <div class="swiper-container" data-size-xl="3" data-size-l="3" data-size-m="2" data-size-s="1.2" data-size-xs="1" data-space-between="24" data-responsive="true" data-next-el=".three-cards-swiper__wrapper .swiper-custom-next" data-prev-el=".three-cards-swiper__wrapper .swiper-custom-prev">
-                  <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                  <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                     <div class="swiper-slide">
                       <figure class="text-hover-effect slide-container" style="background:linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 46, 109, 0.61) 100%),url('/sites/BorougeDev/Style%20Library/assets/Borouge/images/card-1.jpg')">
                         <figcaption class="text-white">
@@ -62,7 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="row mt-3">
+          <div class="row mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
             <div class="col-12 text-end">
               <div class="btn btn--primary-outline text-uppercase text-dark">ALL downloads</div>
             </div>

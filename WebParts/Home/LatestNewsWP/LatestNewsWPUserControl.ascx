@@ -11,12 +11,12 @@
 <div class="placeholder placeholder--no-padding">
     <section class="artilcle-cards-swiper bg-light-grey py-10 px-1" style="background: url('/sites/BorougeDev/Style%20Library/assets/Borouge/images/articles-bg.jpg')">
         <div class="container-fluid position-relative">
-            <div class="row justify-content-center mb-4">
-                <div class="col-md-7 text-center">
-                    <h2 class="fw-normal mb-3">Latest News<span class="fw-semi"> & Events</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Et tincidunt odio et nulla vitae eget pellentesque.</p>
-                </div>
+           <div class="row justify-content-center mb-4">
+            <div class="col-md-7 text-center">
+              <h2 class="fw-normal mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"> Latest News<span class="fw-semi"> & Events</span></h2>
+              <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Et tincidunt odio et nulla vitae eget pellentesque.</p>
             </div>
+          </div>
             <div class="row">
                 <div class="col-12">
                     <div class="artilcle-cards-swiper__wrapper">
@@ -25,7 +25,7 @@
                             <div class="swiper-custom-next swiper-arrow"></div>
                         </div>
                         <div class="swiper-container" data-size-xl="3" data-size-l="3" data-size-m="2" data-size-s="1.2" data-size-xs="1" data-space-between="24" data-responsive="true" data-next-el=".artilcle-cards-swiper__wrapper .swiper-custom-next" data-prev-el=".artilcle-cards-swiper__wrapper .swiper-custom-prev">
-                            <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                          <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                                 <asp:Repeater ID="rptLatestNews" runat="server">
                                     <ItemTemplate>
 
@@ -41,6 +41,7 @@
                                                     </div>
                                                     <p class="article-card__description"><%#Eval("Description")%></p>
                                                 </div>
+                                                 <div class="article-card__footer"><a href="#">Read more</a></div>
                                             </article>
                                         </div>
                                     </ItemTemplate>

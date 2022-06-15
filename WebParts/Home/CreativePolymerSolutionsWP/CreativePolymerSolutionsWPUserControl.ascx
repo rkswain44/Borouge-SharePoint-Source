@@ -37,13 +37,13 @@
 
 
 <div class="placeholder placeholder--no-padding">
-    <section class="three-cards-swiper bg-light-grey py-10 px-1" data-scroll-section="">
+      <section class="three-cards-swiper bg-light-grey py-10 px-1">
         <div class="container-fluid position-relative">
             <div class="row justify-content-center mb-4">
                 <div class="col-md-8 text-center">
-                    <h2 class="fw-normal mb-3">Creative Polymer<span class="fw-semi"> Solutions</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Et tincidunt odio et nulla vitae eget pellentesque.</p>
-                </div>
+                 <h2 class="fw-normal mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Creative Polymer<span class="fw-semi"> Solutions</span></h2>
+                 <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Et tincidunt odio et nulla vitae eget pellentesque.</p>
+            </div>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -52,13 +52,13 @@
                             <div class="swiper-custom-prev swiper-arrow"></div>
                             <div class="swiper-custom-next swiper-arrow"></div>
                         </div>
-                        <div class="swiper-container" data-size-xl="3" data-size-l="3" data-size-m="2" data-size-s="1.2" data-size-xs="1" data-space-between="24" data-responsive="true" data-next-el=".three-cards-swiper__wrapper .swiper-custom-next" data-prev-el=".three-cards-swiper__wrapper .swiper-custom-prev">
-                            <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                         <div class="swiper-container" data-size-xl="3" data-size-l="3" data-size-m="2" data-size-s="1.2" data-size-xs="1.2" data-size="1.2" data-space-between="24" data-responsive="true" data-next-el=".three-cards-swiper__wrapper .swiper-custom-next" data-prev-el=".three-cards-swiper__wrapper .swiper-custom-prev">
+                             <div class="swiper-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                                 <asp:Repeater ID="rptPolymerSolution" runat="server">
                                     <ItemTemplate>
 
                                         <div class="swiper-slide">
-                                            <figure class="text-hover-effect slide-container siderImage" style="background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 46, 109, 0.61) 100%),url('<%#Eval("Image")%>')">
+                                            <figure class="text-hover-effect slide-container" style="background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 46, 109, 0.61) 100%),url('<%#Eval("Image")%>')">
                                                 <figcaption class="text-white">
                                                     <div class="inner-wrap">
                                                         <h3 class="text-white"><%#Eval("Title")%></h3>

@@ -7,8 +7,8 @@
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UCMenu.ascx.cs" Inherits="Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main.UCMenu" %>
 
-
-<header class="position-fixed top-0 desktop__navigation">
+ 
+<header class="position-fixed top-0 desktop__navigation " id="createScroll">
     <div class="container-fluid">
         <div class="navigation-wrapper">
             <a class="navbar-brand" href="/sites/BorougeDev/Pages/home.aspx">
@@ -102,15 +102,15 @@
                                 </ItemTemplate>
                             </asp:Repeater>
                             <li class="iframe-chart">
-                                                <img class="logo" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/iframe.png" alt="" />
-                                            </li>
-                                            <li class="search-icon-wrap">
-                                                <a class="search-icon" search-toggler="" href="#">
-                                                    <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M23.8963 22.0838H22.6783L22.2467 21.6676C24.0967 19.5092 25.0525 16.5646 24.5283 13.4351C23.8038 9.14923 20.2271 5.72673 15.9104 5.20256C9.38918 4.40089 3.90085 9.88923 4.70251 16.4105C5.22668 20.7271 8.64918 24.3038 12.935 25.0284C16.0646 25.5526 19.0092 24.5967 21.1675 22.7467L21.5838 23.1784V24.3963L28.1358 30.9484C28.7679 31.5805 29.8008 31.5805 30.4329 30.9484C31.065 30.3163 31.065 29.2834 30.4329 28.6513L23.8963 22.0838ZM14.6463 22.0838C10.8075 22.0838 7.70876 18.9851 7.70876 15.1463C7.70876 11.3076 10.8075 8.20881 14.6463 8.20881C18.485 8.20881 21.5838 11.3076 21.5838 15.1463C21.5838 18.9851 18.485 22.0838 14.6463 22.0838Z" fill="white" />
-                                                    </svg>
-                                                </a>
-                                            </li>
+                                <img class="logo" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/iframe.png" alt="" />
+                            </li>
+                            <li class="search-icon-wrap">
+                                <a class="search-icon" search-toggler="" href="#">
+                                    <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.8963 22.0838H22.6783L22.2467 21.6676C24.0967 19.5092 25.0525 16.5646 24.5283 13.4351C23.8038 9.14923 20.2271 5.72673 15.9104 5.20256C9.38918 4.40089 3.90085 9.88923 4.70251 16.4105C5.22668 20.7271 8.64918 24.3038 12.935 25.0284C16.0646 25.5526 19.0092 24.5967 21.1675 22.7467L21.5838 23.1784V24.3963L28.1358 30.9484C28.7679 31.5805 29.8008 31.5805 30.4329 30.9484C31.065 30.3163 31.065 29.2834 30.4329 28.6513L23.8963 22.0838ZM14.6463 22.0838C10.8075 22.0838 7.70876 18.9851 7.70876 15.1463C7.70876 11.3076 10.8075 8.20881 14.6463 8.20881C18.485 8.20881 21.5838 11.3076 21.5838 15.1463C21.5838 18.9851 18.485 22.0838 14.6463 22.0838Z" fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
 
                         </ul>
                     </div>

@@ -16,8 +16,8 @@
     <MinimumOfficeToolsVersion>14.1</MinimumOfficeToolsVersion>
     <SandboxedSolution>False</SandboxedSolution>
     <TargetFrameworkProfile />
-   <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-   <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -122,6 +122,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EveryDayLifeWP.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\Home\HeroWP\HeroWP.cs" />
+    <Compile Include="WebParts\Home\HeroWP\HeroWPUserControl.ascx.cs">
+      <DependentUpon>HeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Home\HeroWP\HeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>HeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWP.cs" />
     <Compile Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWPUserControl.ascx.cs">
       <DependentUpon>InvestorRelationsWPUserControl.ascx</DependentUpon>
@@ -202,6 +210,10 @@
     <None Include="WebParts\Home\EveryDayLifeWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{6e696d74-f5f5-4991-a47a-4ff14d823ed0}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\Home\HeroWP\HeroWP.webpart" />
+    <None Include="WebParts\Home\HeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7e74c595-17b1-4007-900f-5c88306c1e2a}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWP.webpart" />
     <None Include="WebParts\Home\InvestorRelationsWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{fe952251-9253-4843-ba7f-0472ae0ea00f}</SharePointProjectItemId>
@@ -266,6 +278,8 @@
       <Generator>SharePointWebPartCodeGenerator</Generator>
       <LastGenOutput>EveryDayLifeWP.ascx.g.cs</LastGenOutput>
     </Content>
+    <Content Include="WebParts\Home\HeroWP\Elements.xml" />
+    <Content Include="WebParts\Home\HeroWP\HeroWPUserControl.ascx" />
     <Content Include="WebParts\Home\InvestorRelationsWP\Elements.xml" />
     <Content Include="WebParts\Home\InvestorRelationsWP\InvestorRelationsWPUserControl.ascx" />
     <Content Include="WebParts\Home\KeyHighlightsWP\Elements.xml" />

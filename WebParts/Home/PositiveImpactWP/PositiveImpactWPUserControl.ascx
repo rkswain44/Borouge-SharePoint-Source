@@ -8,16 +8,16 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="PositiveImpactWPUserControl.ascx.cs" Inherits="Borouge.Internet.Main.WebParts.Home.PositiveImpactWP.PositiveImpactWPUserControl" %>
 
 
-<div class="placeholder placeholder--no-padding">
+ <div class="placeholder placeholder--no-padding">
       <section class="banner-with-text">
         <div class="container position-relative">
-          <div class="banner-with-text__banner position-absolute top-50 start-50 translate-middle w-100"><img src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/bg-map.svg" alt=""></div>
+          <div class="banner-with-text__banner position-absolute top-50 start-50 translate-middle w-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><img src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/bg-map.svg" alt=""></div>
           <div class="row justify-content-center">
             <div class="col-md-8 position-relative">
               <div class="banner-with-text__content text-center">
-                <h2 class="fw-normal mb-3">Positive Impact On Society<span class="fw-semi"> Addressing Global Challenges</span></h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Est viverra in odio volutpat aliquet um. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque.</p>
-                <div class="btn btn--primary text-uppercase">Find Out More</div>
+                <h2 class="fw-normal mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Positive Impact On Society<span class="fw-semi"> Addressing Global Challenges</span></h2>
+                <p class="mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Est viverra in odio volutpat aliquet um. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque.</p>
+                <div class="btn btn--primary text-uppercase" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Find Out More</div>
               </div>
             </div>
           </div>

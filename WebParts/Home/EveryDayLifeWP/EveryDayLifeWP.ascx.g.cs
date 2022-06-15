@@ -58,20 +58,23 @@ namespace Borouge.Internet.Main.WebParts.Home.EveryDayLifeWP {
                         "onsectetur adipiscing elit. Et tincidunt odio et nulla vitae eget pellentesque. " +
                         "Dolor aliquam enim nec sagittis vitae. Est viverra in odio volutpat aliquet um.<" +
                         "/p>\r\n            </div>\r\n          </div>\r\n          <div class=\"row\">\r\n        " +
-                        "    <div class=\"col-12\">\r\n              <div class=\"video-banner mb-3\"><img clas" +
-                        "s=\"video-banner__img\" src=\"/sites/BorougeDev/Style%20Library/assets/Borouge/imag" +
-                        "es/bg-video.jpg\" alt=\"\">\r\n                <button class=\"btn btn--circle btn--ci" +
-                        "rcle-large bg-white position-absolute top-50 start-50 translate-middle video-ban" +
-                        "ner__play\" data-bs-toggle=\"modal\" data-bs-target=\".video-banner-modal\"><span cla" +
-                        "ss=\"ic ic-48 ic-play\"></span></button>\r\n              </div>\r\n            </div>" +
-                        "\r\n          </div>\r\n          <div class=\"row\">\r\n            <div class=\"col-12\"" +
-                        ">\r\n              <h3 class=\"mb-1\">Lorem Ipsum Dolor Esit.</h3>\r\n              <p" +
-                        ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et tincidunt odio et n" +
-                        "ulla vitae eget pellentesque. Dolor aliquam enim nec sagittis vitae. Est viverra" +
-                        " in odio volutpat aliquet um.</p>\r\n              <div class=\"text-center mt-3\">\r" +
-                        "\n                <div class=\"btn btn--primary text-uppercase\">Find Out More</div" +
-                        ">\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </div>\r\n " +
-                        "     </section>\r\n    </div>"));
+                        "    <div class=\"col-12\">\r\n              <div class=\"video-banner mb-3\" data-aos=" +
+                        "\"fade-up\" data-aos-duration=\"1000\" data-aos-delay=\"500\"><img class=\"video-banner" +
+                        "__img\" src=\"/sites/BorougeDev/Style%20Library/assets/Borouge/images/bg-video.jpg" +
+                        "\" alt=\"\">\r\n                <button class=\"btn btn--circle btn--circle-large bg-w" +
+                        "hite position-absolute top-50 start-50 translate-middle video-banner__play\" data" +
+                        "-bs-toggle=\"modal\" data-bs-target=\".video-banner-modal\"><span class=\"ic ic-48 ic" +
+                        "-play\"></span></button>\r\n              </div>\r\n            </div>\r\n          </d" +
+                        "iv>\r\n        <div class=\"row\">\r\n            <div class=\"col-12\">\r\n              " +
+                        "<h3 class=\"mb-1\" data-aos=\"fade-up\" data-aos-duration=\"1000\" data-aos-delay=\"400" +
+                        "\">Lorem Ipsum Dolor Esit.</h3>\r\n              <p data-aos=\"fade-up\" data-aos-dur" +
+                        "ation=\"1000\" data-aos-delay=\"500\">Lorem ipsum dolor sit amet, consectetur adipis" +
+                        "cing elit. Et tincidunt odio et nulla vitae eget pellentesque. Dolor aliquam eni" +
+                        "m nec sagittis vitae. Est viverra in odio volutpat aliquet um.</p>\r\n            " +
+                        "  <div class=\"text-center mt-3\" data-aos=\"fade-up\" data-aos-duration=\"1000\" data" +
+                        "-aos-delay=\"600\">\r\n                <div class=\"btn btn--primary text-uppercase\">" +
+                        "Find Out More</div>\r\n              </div>\r\n            </div>\r\n          </div>\r" +
+                        "\n        </div>\r\n      </section>\r\n    </div>\r\n"));
         }
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
