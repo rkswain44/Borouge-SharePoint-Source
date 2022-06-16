@@ -74,6 +74,7 @@ namespace Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main
 
                 if (lstMenu != null)
                 {
+
                     foreach (SPListItem item in lstMenu)
                     {
                         string MainNode = string.Empty;
@@ -86,19 +87,22 @@ namespace Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main
                         {
                             MainNode = item["Menu-Ar"]?.ToString() ?? string.Empty;
                         }
+                        SPFieldUrlValue URLvalue = new SPFieldUrlValue(item["MenuUrl"].ToString() ?? string.Empty);
 
                         MenuDTO menuItem = new MenuDTO
                         {
                             MenuId = item["ID"]?.ToString() ?? string.Empty,
                             ParentTitle = MainNode,
-                            ParentUrl = item["MenuUrl"]?.ToString() ?? string.Empty,
-                        };
+                            ParentUrl = URLvalue.Url,
+                    };
                         menuItems.Add(menuItem);
 
                     }
                 }
                 rptMenu.DataSource = menuItems;
                 rptMenu.DataBind();
+                rptMobMenu.DataSource = menuItems;
+                rptMobMenu.DataBind();
             }
             catch (Exception ex)
             {
@@ -129,6 +133,50 @@ namespace Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main
                         {
                             MainSubNode = item["Menu-Ar"]?.ToString() ?? string.Empty;
                         }
+                        SPFieldUrlValue SubURLvalue = new SPFieldUrlValue(item["MenuUrl"].ToString() ?? string.Empty);
+                        MenuDTO SubmenuItem = new MenuDTO
+                        {
+                            MenuId = item["ID"]?.ToString() ?? string.Empty,
+                            ParentTitle = MainSubNode,
+                            ParentUrl = SubURLvalue.Url,
+                        };
+                        SubMenuItems.Add(SubmenuItem);
+                    }
+
+                    rptChildMenu.DataSource = SubMenuItems;
+                    rptChildMenu.DataBind();
+                }
+            }
+            catch (Exception ex)
+            {
+                CommonData.ProcessDataException(ex);
+
+            }
+        }
+
+        protected void rptMobMenu_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            try
+            {
+                List<MenuDTO> SubMenuItems = new List<MenuDTO>();
+
+                if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+                {
+                    string MainSubNode = string.Empty;
+                    var Subquery = "<Where><Eq><FieldRef Name='SubMenu_x002d_Id'/><Value Type='Number'>" + ((MenuDTO)e.Item.DataItem).MenuId + "</Value></Eq></Where>";
+
+                    List<SPListItem> lstSubMenu = new SPManager().GetSPListItems(SPListNames.Menu, Subquery, null);
+                    Repeater rptChildMobMenu = e.Item.FindControl("rptChildMobMenu") as Repeater;
+                    foreach (SPListItem item in lstSubMenu)
+                    {
+                        if (IsEnglish)
+                        {
+                            MainSubNode = item["Title"]?.ToString() ?? string.Empty;
+                        }
+                        else
+                        {
+                            MainSubNode = item["Menu-Ar"]?.ToString() ?? string.Empty;
+                        }
                         MenuDTO SubmenuItem = new MenuDTO
                         {
                             MenuId = item["ID"]?.ToString() ?? string.Empty,
@@ -138,8 +186,8 @@ namespace Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main
                         SubMenuItems.Add(SubmenuItem);
                     }
 
-                    rptChildMenu.DataSource = SubMenuItems;
-                    rptChildMenu.DataBind();
+                    rptChildMobMenu.DataSource = SubMenuItems;
+                    rptChildMobMenu.DataBind();
                 }
             }
             catch (Exception ex)

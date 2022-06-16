@@ -7,7 +7,34 @@
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UCMenu.ascx.cs" Inherits="Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main.UCMenu" %>
 
- 
+ <style>
+    .swiper-container {
+        height: 100%;
+        max-height: 100vw;
+        min-width: 0;
+        max-width: 100vw;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .swiper-slide {
+        width: auto;
+        flex-shrink: 0;
+        display: block;
+        height: 100%;
+        max-height: 100%;
+    }
+
+    .swiper-wrapper {
+        max-height: 100%;
+        height: 100%t;
+        display: flex;
+    }
+
+    .siderImage {
+        background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 46, 109, 0.61) 100%)
+    }
+</style>
 <header class="position-fixed top-0 desktop__navigation " id="createScroll">
     <div class="container-fluid">
         <div class="navigation-wrapper">
@@ -122,9 +149,7 @@
 
 <header class="position-fixed mobile__navigation">
     <div class="white-overlay" lang-switcher="">
-        <a href="#">العربية
-                        
-                        
+        <a href="#">العربية                                            
         </a>
     </div>
     <nav class="navbar navbar-expand-xl">
@@ -153,108 +178,25 @@
                             <i class="fas fa-times"></i>
                         </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link active" aria-current="page" href="#">Home
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="parent-link" href="javascript:void(0)"></a>
-                        <a class="nav-link" href="#navbarDropdown" role="button" data-bs-toggle="collapse" aria-expanded="false">
-                            <span>ABOUT US
-                                            
-                                            
-                            </span>
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
+
+                    <asp:Repeater ID="rptMobMenu" runat="server" OnItemDataBound="rptMobMenu_ItemDataBound">
+                        <ItemTemplate>
+                     <li class="nav-item dropdown">
+                     <a class="nav-link" role="button" data-bs-toggle="collapse" aria-expanded="false" href='<%#Eval("ParentUrl") %>'><%#Eval("ParentTitle") %></a>
                         <ul class="dropdown-nav collapse" id="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="#">Executive Management
-                                                
-                                                
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Board of Directors
-                                                
-                                                
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Busines Model
-                                                
-                                                
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Values
-                                                
-                                                
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">History
-                                                
-                                                
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Glossary
-                                                
-                                                
-                                </a>
-                            </li>
+                            <asp:Repeater ID="rptChildMobMenu" runat="server">
+                                <ItemTemplate>
+                                    <li>
+                                        <a class="dropdown-item" href="<%#Eval("ParentUrl") %>"> <%#Eval("ParentTitle") %></a>
+
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>                           
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">INNOVATION
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SUSTAINABILITY
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">E SERVICES
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MEDIA CENTRE
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">INNOVATION
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">OUR PEOPLE
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">INVESTOR RELATIONS
-                                        
-                                        
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT US
-                                        
-                                        
-                        </a>
-                    </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                    
                 </ul>
             </div>
         </div>

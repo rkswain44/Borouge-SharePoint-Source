@@ -101,6 +101,54 @@
     <Compile Include="HTTPModules\HTTPSwitcherModule.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\AboutUs\AboutUsHero\AboutUsHero.cs" />
+    <Compile Include="WebParts\AboutUs\AboutUsHero\AboutUsHeroUserControl.ascx.cs">
+      <DependentUpon>AboutUsHeroUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\AboutUsHero\AboutUsHeroUserControl.ascx.designer.cs">
+      <DependentUpon>AboutUsHeroUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\AboutUsWP\AboutUsWP.cs" />
+    <Compile Include="WebParts\AboutUs\AboutUsWP\AboutUsWPUserControl.ascx.cs">
+      <DependentUpon>AboutUsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\AboutUsWP\AboutUsWPUserControl.ascx.designer.cs">
+      <DependentUpon>AboutUsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\Borouge2030StrategyWP\Borouge2030StrategyWP.cs" />
+    <Compile Include="WebParts\AboutUs\Borouge2030StrategyWP\Borouge2030StrategyWPUserControl.ascx.cs">
+      <DependentUpon>Borouge2030StrategyWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\Borouge2030StrategyWP\Borouge2030StrategyWPUserControl.ascx.designer.cs">
+      <DependentUpon>Borouge2030StrategyWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\CommitedToSustainability\CommitedToSustainability.cs" />
+    <Compile Include="WebParts\AboutUs\CommitedToSustainability\CommitedToSustainabilityUserControl.ascx.cs">
+      <DependentUpon>CommitedToSustainabilityUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\CommitedToSustainability\CommitedToSustainabilityUserControl.ascx.designer.cs">
+      <DependentUpon>CommitedToSustainabilityUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\LeadershipWP\LeadershipWP.cs" />
+    <Compile Include="WebParts\AboutUs\LeadershipWP\LeadershipWPUserControl.ascx.cs">
+      <DependentUpon>LeadershipWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\LeadershipWP\LeadershipWPUserControl.ascx.designer.cs">
+      <DependentUpon>LeadershipWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\OurSustainability\OurSustainability.cs" />
+    <Compile Include="WebParts\AboutUs\OurSustainability\OurSustainabilityUserControl.ascx.cs">
+      <DependentUpon>OurSustainabilityUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\OurSustainability\OurSustainabilityUserControl.ascx.designer.cs">
+      <DependentUpon>OurSustainabilityUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\Home\CreativePolymerSolutionsWP\App_LocalResources\CreativePolymerSolutionsWPUserControl.acsx.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -202,6 +250,30 @@
     <None Include="Package\Package.Template.xml">
       <DependentUpon>Package.package</DependentUpon>
     </None>
+    <None Include="WebParts\AboutUs\AboutUsHero\AboutUsHero.webpart" />
+    <None Include="WebParts\AboutUs\AboutUsHero\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d114e982-bc56-462f-a47c-e620160bee3b}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AboutUs\AboutUsWP\AboutUsWP.webpart" />
+    <None Include="WebParts\AboutUs\AboutUsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{14b96b6e-eb99-4ca0-a6fd-b9fc700c8b73}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AboutUs\Borouge2030StrategyWP\Borouge2030StrategyWP.webpart" />
+    <None Include="WebParts\AboutUs\Borouge2030StrategyWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7a67b68f-8475-4d33-83e6-ee3c1a79b4e6}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AboutUs\CommitedToSustainability\CommitedToSustainability.webpart" />
+    <None Include="WebParts\AboutUs\CommitedToSustainability\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ed25ef2-3c1f-44c1-b25a-cc65fcc50174}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AboutUs\LeadershipWP\LeadershipWP.webpart" />
+    <None Include="WebParts\AboutUs\LeadershipWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{50f5fb44-81ba-4c01-a101-a59ff0a351b2}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AboutUs\OurSustainability\OurSustainability.webpart" />
+    <None Include="WebParts\AboutUs\OurSustainability\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54b1f8bc-c2e6-45f3-abb2-bf538e046e7d}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWP.webpart" />
     <None Include="WebParts\Home\CreativePolymerSolutionsWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{414f3873-db50-47f7-8090-2d524ddd6f25}</SharePointProjectItemId>
@@ -271,6 +343,18 @@
     <Content Include="packages\NLog.5.0.0\lib\netstandard2.0\NLog.dll" />
     <Content Include="packages\NLog.5.0.0\lib\netstandard2.0\NLog.xml" />
     <Content Include="packages\NLog.5.0.0\N.png" />
+    <Content Include="WebParts\AboutUs\AboutUsHero\AboutUsHeroUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\AboutUsHero\Elements.xml" />
+    <Content Include="WebParts\AboutUs\AboutUsWP\AboutUsWPUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\AboutUsWP\Elements.xml" />
+    <Content Include="WebParts\AboutUs\Borouge2030StrategyWP\Borouge2030StrategyWPUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\Borouge2030StrategyWP\Elements.xml" />
+    <Content Include="WebParts\AboutUs\CommitedToSustainability\CommitedToSustainabilityUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\CommitedToSustainability\Elements.xml" />
+    <Content Include="WebParts\AboutUs\LeadershipWP\Elements.xml" />
+    <Content Include="WebParts\AboutUs\LeadershipWP\LeadershipWPUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\OurSustainability\Elements.xml" />
+    <Content Include="WebParts\AboutUs\OurSustainability\OurSustainabilityUserControl.ascx" />
     <Content Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWPUserControl.ascx" />
     <Content Include="WebParts\Home\CreativePolymerSolutionsWP\Elements.xml" />
     <Content Include="WebParts\Home\EveryDayLifeWP\Elements.xml" />

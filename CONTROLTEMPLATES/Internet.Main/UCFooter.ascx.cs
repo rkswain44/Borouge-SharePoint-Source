@@ -48,12 +48,14 @@ namespace Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main
                         {
                             MainNode = item["TitleAr"]?.ToString() ?? string.Empty;
                         }
+                        SPFieldUrlValue FooterURLvalue = new SPFieldUrlValue(item["url"].ToString() ?? string.Empty);
 
                         FooterDTO footerItem = new FooterDTO
                         {
                             FooterId = item["ID"]?.ToString() ?? string.Empty,
                             ParentTitle = MainNode,
-                            Url = item["url"]?.ToString() ?? string.Empty,
+                            Url = FooterURLvalue.Url,
+
                         };
                         footerItems.Add(footerItem);
 
