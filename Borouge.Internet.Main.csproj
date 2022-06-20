@@ -226,6 +226,22 @@
     <Compile Include="WebParts\Home\PublicationWP\PublicationWPUserControl.ascx.designer.cs">
       <DependentUpon>PublicationWPUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\IndustrySolutions\Energy\EnergyHeroWP\EnergyHeroWP.cs" />
+    <Compile Include="WebParts\IndustrySolutions\Energy\EnergyHeroWP\EnergyHeroWPUserControl.ascx.cs">
+      <DependentUpon>EnergyHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\IndustrySolutions\Energy\EnergyHeroWP\EnergyHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>EnergyHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\IndustrySolutions\IndustrySolutionHero\IndustrySolutionHero.cs" />
+    <Compile Include="WebParts\IndustrySolutions\IndustrySolutionHero\IndustrySolutionHeroUserControl.ascx.cs">
+      <DependentUpon>IndustrySolutionHeroUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\IndustrySolutions\IndustrySolutionHero\IndustrySolutionHeroUserControl.ascx.designer.cs">
+      <DependentUpon>IndustrySolutionHeroUserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -310,13 +326,20 @@
     <None Include="WebParts\Home\PublicationWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{b0dc1141-0dca-4245-b546-a232d2e32198}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\IndustrySolutions\Energy\EnergyHeroWP\EnergyHeroWP.webpart" />
+    <None Include="WebParts\IndustrySolutions\Energy\EnergyHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dc63a133-8f6e-4b5b-a5f9-b575b7e04c22}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\IndustrySolutions\IndustrySolutionHero\IndustrySolutionHero.webpart" />
+    <None Include="WebParts\IndustrySolutions\IndustrySolutionHero\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ebe94eff-4fcd-4523-88df-b7edbf92fd8d}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
     <Folder Include="Layouts\Intranet\" />
     <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="WebParts\Eservices\" />
-    <Folder Include="WebParts\IndustrySolutions\" />
     <Folder Include="WebParts\Innovations\" />
     <Folder Include="WebParts\InvestorRelations\" />
     <Folder Include="WebParts\MediaCenter\" />
@@ -376,6 +399,10 @@
     <Content Include="WebParts\Home\PositiveImpactWP\PositiveImpactWPUserControl.ascx" />
     <Content Include="WebParts\Home\PublicationWP\Elements.xml" />
     <Content Include="WebParts\Home\PublicationWP\PublicationWPUserControl.ascx" />
+    <Content Include="WebParts\IndustrySolutions\Energy\EnergyHeroWP\Elements.xml" />
+    <Content Include="WebParts\IndustrySolutions\Energy\EnergyHeroWP\EnergyHeroWPUserControl.ascx" />
+    <Content Include="WebParts\IndustrySolutions\IndustrySolutionHero\Elements.xml" />
+    <Content Include="WebParts\IndustrySolutions\IndustrySolutionHero\IndustrySolutionHeroUserControl.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CONTROLTEMPLATES\Internet.Main\App_LocalResources\UCMenu.ascx.resx">

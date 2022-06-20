@@ -11,9 +11,9 @@
 <div class="placeholder" style="background-image:url('/sites/BorougeDev/Style%20Library/assets/Borouge/images/bg-generic.jpg')">
       <div class="container" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
         <div class="row justify-content-center">
-          <div class="col-md-8 text-center text-white"><img class="mb-3" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/green-icon.svg" alt="" srcset="">
-            <h3 class="mb-2 fw-semi text-white">Commited to Sustainability</h3>
-            <p class="fw-bold">At Borouge, we are committed to explore and drive opportunities towards a circular economy, wellbeing of society and preservation of the environment, while addressing the economic expectations of our shareholders.</p><a class="btn-inline-primary arrow-lime mt-3" href="#">View Sustainability</a>
+          <div class="col-md-8 text-center text-white"><img class="mb-3" runat="server" id="InnerImg" src="" alt="" srcset="">
+            <h3 class="mb-2 fw-semi text-white" runat="server" id="SusTitle"></h3>
+            <p class="fw-bold" runat="server" id="SusDesc"></p><a class="btn-inline-primary arrow-lime mt-3" href="#">View Sustainability</a>
           </div>
         </div>
       </div>

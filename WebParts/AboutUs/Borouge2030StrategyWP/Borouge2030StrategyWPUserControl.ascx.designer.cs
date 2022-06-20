@@ -13,5 +13,41 @@ namespace Borouge.Internet.Main.WebParts.AboutUs.Borouge2030StrategyWP
 
     public partial class Borouge2030StrategyWPUserControl
     {
+
+        /// <summary>
+        /// strategyImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage strategyImage;
+
+        /// <summary>
+        /// StrategyTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl StrategyTitle;
+
+        /// <summary>
+        /// StrategyDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl StrategyDesc;
+
+        /// <summary>
+        /// rptOurStratgey control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptOurStratgey;
     }
 }

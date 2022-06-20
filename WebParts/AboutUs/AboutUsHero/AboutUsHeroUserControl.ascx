@@ -10,8 +10,10 @@
 
 
 
-<div class="placeholder placeholder--no-padding">
-            <section class="page-cover-widget" style="background-image:url('/sites/BorougeDev/Style%20Library/assets/Borouge/images/about-hero.jpg')">
+<asp:Repeater ID="rptAboutUsHero" runat="server">
+    <ItemTemplate>
+        <div class="placeholder placeholder--no-padding">
+            <section class="page-cover-widget" style="background-image:url('<%#Eval("ImageURL")%>')">
               <div class="container-fluid">
                 <div class="row px-3">
                   <div class="col-md-6">
@@ -19,9 +21,11 @@
                     <div class="breadcrumbs-widget">
                       <div class="breadcrumbs__wrapper"><a class="breadcrumbs__link" href="#1">Home</a><a class="breadcrumbs__link current__page" href="#2">About Us</a></div>
                     </div>
-                    <h2 class="fw-normal mb-3 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Value creation through<span class="fw-semi"> people and innovation</span></h2>
+                    <h2 class="fw-normal mb-3 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><%#Eval("Title")%></h2>
                   </div>
                 </div>
               </div>
             </section>
     </div>
+    </ItemTemplate>
+</asp:Repeater>

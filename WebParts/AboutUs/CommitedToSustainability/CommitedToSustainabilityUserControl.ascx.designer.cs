@@ -13,5 +13,32 @@ namespace Borouge.Internet.Main.WebParts.AboutUs.CommitedToSustainability
 
     public partial class CommitedToSustainabilityUserControl
     {
+
+        /// <summary>
+        /// InnerImg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage InnerImg;
+
+        /// <summary>
+        /// SusTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl SusTitle;
+
+        /// <summary>
+        /// SusDesc control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl SusDesc;
     }
 }
