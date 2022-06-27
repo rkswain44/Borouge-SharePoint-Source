@@ -8,9 +8,10 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="IndustrySolutionHeroUserControl.ascx.cs" Inherits="Borouge.Internet.Main.WebParts.IndustrySolutions.IndustrySolutionHero.IndustrySolutionHeroUserControl" %>
 
 
-
+<asp:Repeater ID="rptIndustrialSolutionHero" runat="server">
+    <ItemTemplate>
 <div class="placeholder placeholder--no-padding">
-            <section class="page-cover-widget" style="background-image:url('/sites/BorougeDev/Style%20Library/assets/Borouge/images/industry-solution-banner-1.jpg')">
+            <section class="page-cover-widget" style="background-image:url('<%#Eval("ImageURL")%>')">
               <div class="container-fluid">
                 <div class="row px-3">
                   <div class="col-md-6">
@@ -18,21 +19,24 @@
                     <div class="breadcrumbs-widget">
                       <div class="breadcrumbs__wrapper"><a class="breadcrumbs__link" href="#1">Home</a><a class="breadcrumbs__link current__page" href="#2">Industry Solutions</a></div>
                     </div>
-                    <h2 class="fw-normal mb-3 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Value creation through<span class="fw-semi"> people and innovation</span></h2>
+                    <h2 class="fw-normal mb-3 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><%#Eval("Title")%></h2>
                   </div>
                 </div>
               </div>
             </section>
-    </div>
+          </div>
+         </ItemTemplate>
+              </asp:Repeater>
+
     <div class="placeholder">
       <div class="container">
         <section class="page-tagline-widget">
           <div class="row justify-content-center px-3">
             <div class="col-md-4">
-              <h3 class="fw-semi mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100">Industry Solutions</h3>
+              <h3 class="fw-semi mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100" runat="server" id="IndustrySOlutionTitle"></h3>
             </div>
             <div class="col-md-8">
-              <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">The unique Borstar® process and catalyst technology enables Borouge to provide a differentiated range of polyethylene and polypropylene innovative  solutions for infrastructure, energy, mobility and packaging sectors.  Our innovative  polymer solutions contribute towards addressing major global challenges in various fields such as: climate change, food protection, water, energy, communication and healthcare.​</p>
+              <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="IndustrySolutionDesc">​</p>
             </div>
           </div>
         </section>
@@ -43,11 +47,11 @@
               <div class="container">
                 <div class="row px-3">
                   <div class="order-2 order-md-1 col-md-7 row align-content-center">                  
-                    <h3 class="fw-semi mb-3">Energy</h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">​​We are surrounded by energy as it is transported through cables in buildings, streets, underground, overhead and at the bottom of waterways and seas. Given the crucial function of cables and the challenge of installing them, safety, reliability and longevity are extremely important. The cable jacket shields the cable from external influences and plays an essential part in safeguarding system functionality throughout the cable’s lifetime.</p>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Built on more than 50 years of experience, Borouge and Borealis provide high quality polyolefin compounds to the wire and cable industry across the world.</p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <h3 class="fw-semi mb-3" runat="server" id="EnergyTtile"></h3>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="EnergyDesc">​​</p>
+                    <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/energy-box.jpg" alt="" srcset=""></div>
+                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="ImgEnergy" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
@@ -57,11 +61,11 @@
               <div class="container">
                 <div class="row px-3">
                   <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
-                    <h3 class="fw-semi mb-3">Infrastructure</h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">​​With more than 50 years of experience, Borouge and Borealis deliver materials for advanced polyolefin infrastructure and pipe systems that help the pipe industry better serve a variety of communities worldwide.</p>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">We offer polyethylene and polypropylene materials for pipes used in many different industries: water and gas supply, waste water and sewage disposal, plumbing and heating, and oil and gas, including steel pipe coating solutions for onshore and offshore oil and gas pipelines.</p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <h3 class="fw-semi mb-3" runat="server" id="InfraTitle"></h3>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="InfraDesc"></p>
+                      <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/Infrastructure-box.jpg" alt="" srcset=""></div>
+                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="ImgInfra" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
@@ -71,11 +75,11 @@
               <div class="container">
                 <div class="row px-3">
                   <div class="order-2 order-md-1 col-md-7 row align-content-center">                  
-                    <h3 class="fw-semi mb-3">Agriculture</h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">​​Borouge is focusing extensively in promoting precision farming with its unique Borstar products. We are working with many value chain stakeholders including universities, R&amp;D companies and progressive commercial farmers to promote our innovative solutions.</p>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">BAccording to the UN, the world’s population will increase by 57 million people by 2050, which, will be accompanied by an increase in the rate of urbanisation, especially in China and India When it comes to water resource management, almost 80% of water is used for food production, and it will no longer be viable to depend on traditional monsoons for cultivating crops.</p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <h3 class="fw-semi mb-3" runat="server" id="AgreTitle"></h3>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="AgreDesc"></p>
+                      <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/Agriculture-box.jpg" alt="" srcset=""></div>
+                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="AgreImage" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
@@ -85,12 +89,10 @@
               <div class="container">
                 <div class="row px-3">
                   <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
-                    <h3 class="fw-semi mb-3">Mobility</h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Design thinking, consumer experience, light weighting and improved sustainability are shaping tomorrow's automotive needs.</p>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Borouge's and Borealis' leading edge polypropylene (PP) compounded materials are used in a wide range of exterior, interior and under-the-bonnet applications.</p>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">These include bumpers, body panels, exterior trims, dashboards, door claddings, front end carriers and air intake manifolds, amongst others.</p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <h3 class="fw-semi mb-3" runat="server" id="MobalityTitle"></h3>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="MobalityDesc"></p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/Mobility-box.jpg" alt="" srcset=""></div>
+                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="MobalityImage" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
@@ -100,11 +102,11 @@
               <div class="container">
                 <div class="row px-3">
                   <div class="order-2 order-md-1 col-md-7 row align-content-center">                  
-                    <h3 class="fw-semi mb-3">Healthcare</h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">​​Borouge offers a dedicated grade range of Bormed™ polyolefins, designed to meet the challenging needs of the healthcare sector. Bormed™ includes both polyethylene and polypropylene grades for rigid and flexible products, ensuring a consistent approach to the medical and healthcare market, independent of conversion technology or polymer type.</p>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">The broad Bormed™ grade range meets the technical requirements of a wide variety of end-uses, including medical and diagnostics devices and pharmaceutical packaging.</p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <h3 class="fw-semi mb-3" runat="server" id="HealthcareTitle"></h3>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="HealthcareDesc"></p>
+                      <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/Healthcare-box.jpg" alt="" srcset=""></div>
+                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="HealthCareImg" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
@@ -114,11 +116,10 @@
               <div class="container">
                 <div class="row px-3">
                   <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
-                    <h3 class="fw-semi mb-3">Advanced Packaging</h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Borouge is committed to enhancing daily lives with quality packaging. Consistency and material advantages are key benefits of our packaging solutions portfolio, which ensures that produce is kept fresh and tasty without compromising on sustainability. As part of our circularity ambition, Borouge is committed to developing differentiated and sustainable packaging solutions.</p>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">Built on more than 50 years of experience, the unique Borstar® process and catalyst technology enables Borouge to provide a differentiated range of polyethylene and polypropylene products that enable innovative advanced packaging solutions for both flexible and rigid applications.</p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <h3 class="fw-semi mb-3" runat="server" id="AdvancedPackagingTitle"></h3>
+                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="AdvancedPackagingDesc"></p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/AdvancedPackaging-box.jpg" alt="" srcset=""></div>
+                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="AdvancedPackagingImg" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>

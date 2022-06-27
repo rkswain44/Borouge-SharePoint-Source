@@ -52,16 +52,4 @@
       </section>
     </div>
 
- <div class="video-banner-modal modal fade modal-generic video-banner-modal__video-popup spotlight__video-popup" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true" data-autoplay-video-modal>
-      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M28 2.82L25.18 0L14 11.18L2.82 0L0 2.82L11.18 14L0 25.18L2.82 28L14 16.82L25.18 28L28 25.18L16.82 14L28 2.82Z" fill="white"/>
-</svg>
-          </button>
-          <div class="modal-body">
-            <iframe src="https://www.youtube.com/embed/igQvjtmeDus?controls=1&amp;rel=0&amp;enablejsapi=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
+ 

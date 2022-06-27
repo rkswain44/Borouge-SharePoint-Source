@@ -7,7 +7,7 @@
 <%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="UCMenu.ascx.cs" Inherits="Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main.UCMenu" %>
 
- <style>
+<style>
     .swiper-container {
         height: 100%;
         max-height: 100vw;
@@ -48,11 +48,12 @@
                 <div class="top-menu">
                     <ul>
                         <li>
-                            <a href="#"><%=GetLocalResourceObject("CONTACTUS")%>
+                            <a href="#"><%=GetLocalResourceObject("OURPEOPLE")%>
                                             
                                             
                             </a>
                         </li>
+
                         <li>
                             <a href="#"><%=GetLocalResourceObject("INVESTORRELATIONS")%>
                                             
@@ -60,7 +61,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"><%=GetLocalResourceObject("OURPEOPLE")%>
+                            <a href="/sites/BorougeDev/Pages/contact.aspx"><%=GetLocalResourceObject("CONTACTUS")%>
                                             
                                             
                             </a>
@@ -89,12 +90,10 @@
                 <nav class="navbar">
                     <div class="search-box">
                         <div class="input-wrapper">
-                            <form action="" validation="validation" novalidate="novalidate">
                                 <input type="text" placeholder="Please enter text" data-rule-minlength="3" data-rule-xss="true" data-rule-required="true" name="search_query" />
                                 <button>
                                     <i class="fas fa-search"></i>
                                 </button>
-                            </form>
                         </div>
                         <i class="fas fa-times"></i>
                     </div>
@@ -168,12 +167,10 @@
                         <i class="fas fa-search" search-toggler=""></i>
                         <div class="search-box">
                             <div class="input-wrapper">
-                                <form action="" validation="validation" novalidate="novalidate">
                                     <input type="text" placeholder="Please enter text" data-rule-minlength="3" data-rule-xss="true" data-rule-required="true" name="search_query" />
                                     <button>
                                         <i class="fas fa-search"></i>
                                     </button>
-                                </form>
                             </div>
                             <i class="fas fa-times"></i>
                         </div>
@@ -181,22 +178,22 @@
 
                     <asp:Repeater ID="rptMobMenu" runat="server" OnItemDataBound="rptMobMenu_ItemDataBound">
                         <ItemTemplate>
-                     <li class="nav-item dropdown">
-                     <a class="nav-link" role="button" data-bs-toggle="collapse" aria-expanded="false" href='<%#Eval("ParentUrl") %>'><%#Eval("ParentTitle") %></a>
-                        <ul class="dropdown-nav collapse" id="navbarDropdown">
-                            <asp:Repeater ID="rptChildMobMenu" runat="server">
-                                <ItemTemplate>
-                                    <li>
-                                        <a class="dropdown-item" href="<%#Eval("ParentUrl") %>"> <%#Eval("ParentTitle") %></a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" role="button" data-bs-toggle="collapse" aria-expanded="false" href='<%#Eval("ParentUrl") %>'><%#Eval("ParentTitle") %></a>
+                                <ul class="dropdown-nav collapse" id="navbarDropdown">
+                                    <asp:Repeater ID="rptChildMobMenu" runat="server">
+                                        <ItemTemplate>
+                                            <li>
+                                                <a class="dropdown-item" href="<%#Eval("ParentUrl") %>"><%#Eval("ParentTitle") %></a>
 
-                                    </li>
-                                </ItemTemplate>
-                            </asp:Repeater>                           
-                        </ul>
-                    </li>
+                                            </li>
+                                        </ItemTemplate>
+                                    </asp:Repeater>
+                                </ul>
+                            </li>
                         </ItemTemplate>
                     </asp:Repeater>
-                    
+
                 </ul>
             </div>
         </div>

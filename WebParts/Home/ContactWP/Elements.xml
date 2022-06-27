@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ContactWP" List="113" Url="_catalogs/wp">
+    <File Path="ContactWP\ContactWP.webpart" Url="Borouge.Internet.Main_ContactWP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Home" />
+    </File>
+  </Module>
+</Elements>

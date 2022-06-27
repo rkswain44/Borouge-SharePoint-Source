@@ -2,7 +2,7 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
   <Module Name="Borouge2030StrategyWP" List="113" Url="_catalogs/wp">
     <File Path="Borouge2030StrategyWP\Borouge2030StrategyWP.webpart" Url="Borouge.Internet.Main_Borouge2030StrategyWP.webpart" Type="GhostableInLibrary" >
-      <Property Name="Group" Value="Custom" />
+      <Property Name="Group" Value="About Us" />
     </File>
   </Module>
 </Elements>

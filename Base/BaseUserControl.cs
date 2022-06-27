@@ -10,6 +10,8 @@ using System.Web.UI;
 using System.Diagnostics;
 using Borouge.Internet.Common.Helpers;
 using Borouge.Internet.Common.Extensions;
+using System.Collections.Specialized;
+using Microsoft.SharePoint.Utilities;
 
 namespace Borouge.Internet.Main
 {
@@ -119,6 +121,48 @@ namespace Borouge.Internet.Main
             }
             return strUserNo;
         }
+        public bool SendEmail(string toAddress, string fromEmail, string subject, string body)
+        {
+            bool boolSendEmail = false;
+
+
+            try
+            {
+                string sendTo = String.Empty;
+                string sendSubject = String.Empty;
+                string strbody = String.Empty;
+                string bcc = String.Empty;
+                var sb = new StringBuilder();
+
+                strbody = HttpUtility.HtmlDecode(body);
+                sb.Append(strbody);
+                StringDictionary headers = new StringDictionary();
+                headers.Add("to", toAddress);
+                headers.Add("from", fromEmail);
+                headers.Add("subject", subject);
+                headers.Add("content-type", "text/html");
+                headers.Add("fAppendHtmlTag", "false");
+                SPSecurity.RunWithElevatedPrivileges(delegate ()
+                {
+                    using (SPSite site = new SPSite(SPContext.Current.Site.ID, SPContext.Current.Site.Zone))
+                    {
+                        using (SPWeb web = site.OpenWeb(SPContext.Current.Web.ID))
+                        {
+                            SPUtility.SendEmail(web, headers, sb.ToString());
+                            boolSendEmail = true;
+
+                        }
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                boolSendEmail = false;
+
+            }
+            return boolSendEmail;
+        }
+
 
     }
 }
