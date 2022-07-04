@@ -439,6 +439,30 @@
     <Compile Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWPUserControl.ascx.designer.cs">
       <DependentUpon>SupportingCustomerWPUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWP.cs" />
+    <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx.cs">
+      <DependentUpon>GlobalChallengesWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx.designer.cs">
+      <DependentUpon>GlobalChallengesWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWP.cs" />
+    <Compile Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWPUserControl.ascx.cs">
+      <DependentUpon>SustainbilityHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>SustainbilityHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWP.cs" />
+    <Compile Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWPUserControl.ascx.cs">
+      <DependentUpon>SustainbilityReportWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWPUserControl.ascx.designer.cs">
+      <DependentUpon>SustainbilityReportWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -567,6 +591,18 @@
       <SharePointProjectItemId>{92edb794-c539-4a53-979c-e8fbea1adad7}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWP.webpart" />
+    <None Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWP.webpart" />
+    <None Include="WebParts\Sustainbility\GlobalChallengesWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c8c3eb5-abcd-441d-a604-e622c3b4a72a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\SustainbilityHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8caaa393-f575-4c9f-b9ec-721b0c358683}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWP.webpart" />
+    <None Include="WebParts\Sustainbility\SustainbilityReportWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{87f1dee7-d2f7-4a03-9aa6-d7ca744cc106}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWP.webpart" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
@@ -577,7 +613,6 @@
     <Folder Include="WebParts\MediaCenter\" />
     <Folder Include="WebParts\OurPeople\" />
     <Folder Include="WebParts\OurSolution\" />
-    <Folder Include="WebParts\Sustainbility\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CONTROLTEMPLATES\Internet.Main\UCFooter.ascx" />
@@ -653,6 +688,12 @@
     <Content Include="WebParts\Innovations\OurMissionWP\OurMissionWPUserControl.ascx" />
     <Content Include="WebParts\Innovations\SupportingCustomerWP\Elements.xml" />
     <Content Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\GlobalChallengesWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\SustainbilityHeroWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\SustainbilityReportWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWPUserControl.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CONTROLTEMPLATES\Internet.Main\App_LocalResources\UCMenu.ascx.resx">

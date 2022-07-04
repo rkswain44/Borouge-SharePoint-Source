@@ -15,7 +15,7 @@
               <div class="container-fluid">
                 <div class="row px-3">
                   <div class="col-md-6">
-                    <div class="cover-title"></div>
+                    <div class="cover-title mb-4"></div>
                     <div class="breadcrumbs-widget">
                       <div class="breadcrumbs__wrapper"><a class="breadcrumbs__link" href="#1">Home</a><a class="breadcrumbs__link current__page" href="#2">Industry Solutions</a></div>
                     </div>
@@ -27,7 +27,7 @@
           </div>
          </ItemTemplate>
               </asp:Repeater>
-
+			  
     <div class="placeholder">
       <div class="container">
         <section class="page-tagline-widget">
@@ -35,34 +35,36 @@
             <div class="col-md-4">
               <h3 class="fw-semi mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" data-aos-delay="100" runat="server" id="IndustrySOlutionTitle"></h3>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
               <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="IndustrySolutionDesc">​</p>
             </div>
           </div>
         </section>
       </div>
     </div>
-    <div class="placeholder placeholder--bg-light-grey-200">
+	
+    <div class="placeholder placeholder--bg-light-grey-200 placeholder--grey-arrow placeholder--grey-arrow-right">
             <section class="media-card-widget">
               <div class="container">
                 <div class="row px-3">
-                  <div class="order-2 order-md-1 col-md-7 row align-content-center">                  
+                  <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
                     <h3 class="fw-semi mb-3" runat="server" id="EnergyTtile"></h3>
                     <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="EnergyDesc">​​</p>
                     <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="ImgEnergy" src="" alt="" srcset=""></div>
+                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="ImgEnergy" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
     </div>
-    <div class="placeholder">
+	
+    <div class="placeholder placeholder--grey-arrow placeholder--grey-arrow-left">
             <section class="media-card-widget">
               <div class="container">
                 <div class="row px-3">
                   <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
                     <h3 class="fw-semi mb-3" runat="server" id="InfraTitle"></h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="InfraDesc"></p>
+                    <p data-aos="fade-up" class="fw-light" data-aos-delay="500" data-aos-duration="1000" runat="server" id="InfraDesc"></p>
                       <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
                   <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="ImgInfra" src="" alt="" srcset=""></div>
@@ -70,43 +72,47 @@
               </div>
             </section>
     </div>
-    <div class="placeholder placeholder--bg-light-grey-200">
+	
+    <div class="placeholder placeholder--bg-light-grey-200 placeholder--grey-arrow placeholder--grey-arrow-right">
             <section class="media-card-widget">
               <div class="container">
                 <div class="row px-3">
-                  <div class="order-2 order-md-1 col-md-7 row align-content-center">                  
+                  <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
                     <h3 class="fw-semi mb-3" runat="server" id="AgreTitle"></h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="AgreDesc"></p>
+                    <p data-aos="fade-up" class="fw-light" data-aos-delay="500" data-aos-duration="1000" runat="server" id="AgreDesc"></p>
                       <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="AgreImage" src="" alt="" srcset=""></div>
+                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="AgreImage" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
     </div>
-    <div class="placeholder">
+	
+    <div class="placeholder placeholder--grey-arrow placeholder--grey-arrow-left">
             <section class="media-card-widget">
               <div class="container">
                 <div class="row px-3">
                   <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
                     <h3 class="fw-semi mb-3" runat="server" id="MobalityTitle"></h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="MobalityDesc"></p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <p data-aos="fade-up" class="fw-light" data-aos-delay="500" data-aos-duration="1000" runat="server" id="MobalityDesc"></p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
                   <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="MobalityImage" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
     </div>
-    <div class="placeholder placeholder--bg-light-grey-200">
+	
+    <div class="placeholder placeholder--bg-light-grey-200 placeholder--bg-light-grey-200 placeholder--grey-arrow placeholder--grey-arrow-right">
             <section class="media-card-widget">
               <div class="container">
                 <div class="row px-3">
-                  <div class="order-2 order-md-1 col-md-7 row align-content-center">                  
+                  <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
                     <h3 class="fw-semi mb-3" runat="server" id="HealthcareTitle"></h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="HealthcareDesc"></p>
+                    <p data-aos="fade-up" class="fw-light" data-aos-delay="500" data-aos-duration="1000" runat="server" id="HealthcareDesc"></p>
                       <a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
-                  <div class="order-1 order-md-2 col-md-4 offset-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="HealthCareImg" src="" alt="" srcset=""></div>
+                  <div class="col-md-4 order-1 order-md-1">
+				  <img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="HealthCareImg" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>
@@ -117,7 +123,8 @@
                 <div class="row px-3">
                   <div class="col-md-7 offset-md-1 order-2 order-md-2 row align-content-center">                  
                     <h3 class="fw-semi mb-3" runat="server" id="AdvancedPackagingTitle"></h3>
-                    <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="AdvancedPackagingDesc"></p><a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
+                    <p data-aos="fade-up" class="fw-light" data-aos-delay="500" data-aos-duration="1000" runat="server" id="AdvancedPackagingDesc"></p>
+					<a class="mt-4 mb-4 mb-md-0 btn-inline-primary btn-inline-primary--light" href="javascript:void(0)">Read More </a>
                   </div>
                   <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="AdvancedPackagingImg" src="" alt="" srcset=""></div>
                 </div>

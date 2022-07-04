@@ -35,27 +35,34 @@
         background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 46, 109, 0.61) 100%)
     }
 </style>
-<header class="position-fixed top-0 desktop__navigation " id="createScroll">
+<header class="position-fixed top-0 desktop__navigation" id="createScroll">
     <div class="container-fluid">
         <div class="navigation-wrapper">
             <a class="navbar-brand" href="/sites/BorougeDev/Pages/home.aspx">
                 <img class="logo" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/logo.svg" alt="" />
                 <img class="horizontal-logo" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/logo.svg" alt="" />
             </a>
+            <div class="breadcrumbs-widget px-3">
+                <div class="breadcrumbs__wrapper" id="dvBreadCrum">
+                    <a class="breadcrumbs__link" href="#1">Home</a>
+                    <a class="breadcrumbs__link" href="#2">main page</a>
+                    <a class="breadcrumbs__link current__page" href="#3">sub page</a>
+                </div>
+            </div>
             <div class="menu-wrapper">
                 <div class="blue-overlay">
                 </div>
                 <div class="top-menu">
                     <ul>
                         <li>
-                            <a href="#"><%=GetLocalResourceObject("OURPEOPLE")%>
+                            <a href="/sites/BorougeDev/our-people/Pages/default.aspx"><%=GetLocalResourceObject("OURPEOPLE")%>
                                             
                                             
                             </a>
                         </li>
 
                         <li>
-                            <a href="#"><%=GetLocalResourceObject("INVESTORRELATIONS")%>
+                            <a href="/sites/BorougeDev/investor-relations/Pages/default.aspx"><%=GetLocalResourceObject("INVESTORRELATIONS")%>
                                             
                                             
                             </a>
@@ -88,12 +95,12 @@
                     </ul>
                 </div>
                 <nav class="navbar">
-                    <div class="search-box">
+                    <div class="search-box" style="display: none">
                         <div class="input-wrapper">
-                                <input type="text" placeholder="Please enter text" data-rule-minlength="3" data-rule-xss="true" data-rule-required="true" name="search_query" />
-                                <button>
-                                    <i class="fas fa-search"></i>
-                                </button>
+                            <input type="text" placeholder="Please enter text" data-rule-minlength="3" data-rule-xss="true" data-rule-required="true" name="search_query" />
+                            <button>
+                                <i class="fas fa-search"></i>
+                            </button>
                         </div>
                         <i class="fas fa-times"></i>
                     </div>
@@ -167,10 +174,10 @@
                         <i class="fas fa-search" search-toggler=""></i>
                         <div class="search-box">
                             <div class="input-wrapper">
-                                    <input type="text" placeholder="Please enter text" data-rule-minlength="3" data-rule-xss="true" data-rule-required="true" name="search_query" />
-                                    <button>
-                                        <i class="fas fa-search"></i>
-                                    </button>
+                                <input type="text" placeholder="Please enter text" data-rule-minlength="3" data-rule-xss="true" data-rule-required="true" name="search_query" />
+                                <button>
+                                    <i class="fas fa-search"></i>
+                                </button>
                             </div>
                             <i class="fas fa-times"></i>
                         </div>
@@ -199,3 +206,190 @@
         </div>
     </nav>
 </header>
+
+<script>
+    var rootWebTitle = "";
+    var rootUrl = "";
+    var SiteHTML = "";
+    var currentPageTitle = "";
+    var language = "";
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function doSuccessBreadCrum(data) {
+        debugger;
+        var breadCrumHTML = "";
+        if (data.d.results.length > 0) {
+            $.each(data.d.results, function (index, item) {
+                var pageTitle = "";
+                if (language == "en-us") {
+                    pageTitle = item.Title != null ? item.Title : "";
+                    if (rootWebTitle == _spPageContextInfo.webTitle) {
+                        if (pageTitle == "Home") {
+                            breadCrumHTML = "<a class='breadcrumbs__link' href=" + rootUrl + ">" + rootWebTitle + "</a>";
+                        }
+                        else {
+                            var pageHTML = "<a class='breadcrumbs__link' href=" + _spPageContextInfo.webAbsoluteUrl + ">" + pageTitle + "</a>";
+
+                            breadCrumHTML = "<a class='breadcrumbs__link' href=" + rootUrl + ">" + rootWebTitle + "</a>" + pageHTML;
+
+                        }
+                        $("#dvBreadCrum").html(breadCrumHTML);
+                    }
+                    else {
+
+                        var pageHTML = "<a class='breadcrumbs__link' href=" + _spPageContextInfo.webAbsoluteUrl + ">" + _spPageContextInfo.webTitle + "</a><a class='breadcrumbs__link' href=" + _spPageContextInfo.webAbsoluteUrl + ">" + pageTitle + "</a>";
+                        getParentWebInfo(_spPageContextInfo.webAbsoluteUrl, pageHTML);
+
+
+                    }
+                }
+
+                else {
+                    pageTitle = item.TitleAr != null ? item.TitleAr : "";
+                    var pageHTML = "<a class='breadcrumbs__link' href=" + _spPageContextInfo.webAbsoluteUrl + ">" + _spPageContextInfo.webTitle + "</a>";
+
+                    if (rootWebTitle == _spPageContextInfo.webTitle) {
+
+
+                        breadCrumHTML = "<a class='breadcrumbs__link' href=" + rootUrl + ">" + rootWebTitle + "</a>";
+                        $("#dvBreadCrum").html(breadCrumHTML);
+                    }
+                    else {
+                        getParentWebInfo(_spPageContextInfo.webAbsoluteUrl, pageHTML);
+
+
+                    }
+                }
+
+
+            });
+        }
+        else {
+            if (rootWebTitle == _spPageContextInfo.webTitle) {
+                breadCrumHTML = "<a class='breadcrumbs__link' href=" + rootUrl + ">" + rootWebTitle + "</a>";
+                $("#dvBreadCrum").html(breadCrumHTML);
+            }
+            else {
+                var pageHTML = "<a class='breadcrumbs__link' href=" + _spPageContextInfo.webAbsoluteUrl + ">" + _spPageContextInfo.webTitle + "</a>";
+                getParentWebInfo(_spPageContextInfo.webAbsoluteUrl, pageHTML);
+
+            }
+
+        }
+
+    }
+    function doErrorBreadCrum(err) {
+        alert(JSON.stringify(err));
+    }
+
+    function getBreadCrumInfo() {
+        var breadCrumSiteUrl = _spPageContextInfo.siteAbsoluteUrl;
+        var queryPageUrl = _spPageContextInfo.serverRequestPath;
+        var Title = "Bread Crumb";
+        var ID = "";
+        var Filter = "PageURL eq '" + queryPageUrl + "'";
+        var Select = "Title,TitleAr,PageURL";
+        var expand = "";
+        var breadCrumRestApiUrl = breadCrumSiteUrl + "/_api/web/lists/getbytitle('" + Title + "')/items?$filter=" + Filter + "&$select=" + Select;
+
+
+
+        jQuery.ajax({
+            url: breadCrumRestApiUrl,
+            type: "GET",
+            async: false,
+            headers: { "Accept": "application/json; odata=verbose" },
+            success: doSuccessBreadCrum,
+            error: doErrorBreadCrum
+        });
+
+    }
+    function getRootWebInfo() {
+        $.ajax({
+            url: _spPageContextInfo.siteAbsoluteUrl + "/_api/site/rootweb",
+            type: "GET",
+            async: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+            },
+            success: function (data) {
+                if (data != null) {
+                    rootWebTitle = data.d.Title
+                    rootUrl = data.d.Url;
+                    getBreadCrumInfo();
+
+                }
+            },
+            error: function (error) {
+                alert(JSON.stringify(error));
+            }
+        });
+
+    }
+
+    function getParentWebInfo(Url, pageHTML) {
+
+        $.ajax({
+            url: Url + "/_api/web/parentweb",
+            type: "GET",
+            async: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+            },
+            success: function (data) {
+                if (data != null) {
+                    if (language == "en-us") {
+                        var siteTitle = data.d.Title
+                        var siteUrl = data.d.ServerRelativeUrl;
+
+                        if (siteTitle != rootWebTitle) {
+                            newSiteHTML = "";
+                            newSiteHTML = "<a class='breadcrumbs__link' href=" + siteUrl + ">" + siteTitle + "</a>";
+                            SiteHTML = newSiteHTML + SiteHTML;
+                            getParentWebInfo(siteUrl, pageHTML)
+                        }
+                        else {
+                            var breadCrumHTML = "";
+                            breadCrumHTML = "<a class='breadcrumbs__link' href=" + rootUrl + ">" + rootWebTitle + "</a> " + pageHTML;
+                            $("#dvBreadCrum").html(breadCrumHTML);
+                        }
+
+                    }
+                    else {
+                        var siteTitle = data.d.Title;
+                        var siteUrl = data.d.ServerRelativeUrl;
+
+                        if (siteTitle != rootWebTitle) {
+                            newSiteHTML = "";
+                            newSiteHTML = "<a class='breadcrumbs__link' href=" + siteUrl + ">" + siteTitle + "</a>";
+                            SiteHTML = newSiteHTML + SiteHTML;
+                            getParentWebInfo(siteUrl, pageHTML)
+                        }
+                        else {
+                            var breadCrumHTML = "";
+                            breadCrumHTML = "<a class='breadcrumbs__link' href=" + rootUrl + ">" + rootWebTitle + "</a>";
+                            $("#dvBreadCrum").html(breadCrumHTML);
+                        }
+                    }
+                }
+            },
+            error: function (error) {
+
+            }
+        });
+    }
+</script>

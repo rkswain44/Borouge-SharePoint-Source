@@ -120,7 +120,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-7 position-relative">
                     <div class="fluid-banner-text__content text-center">
-                        <h2 class="heading-1 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Investor Relations</h2>
+                        <h2 class="heading-1 mb-5 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Investor Relations</h2>
                         <p class="mb-4">For any inquiries related to investors and investor relations,<br />
                             please contact the IR team at</p>
                         <div class="btn btn--primary text-uppercase" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">InvestorRelations@borouge.com</div>
