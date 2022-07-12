@@ -17,7 +17,8 @@
                     <h3 class="fw-semi mb-3" runat="server" id="applicationCenterTitle"></h3>
                     <p class="fw-light" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" runat="server" id="ApplicationCenterDesc"></p>
                   </div>
-                  <div class="col-md-4 order-1 order-md-1"><img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="ApplicationImg" src="" alt="" srcset=""></div>
+                  <div class="col-md-4 order-1 order-md-1">
+                      <img class="img-fluid col-12 mb-4 mb-md-0" runat="server" id="ApplicationImg" src="" alt="" srcset=""></div>
                 </div>
               </div>
             </section>

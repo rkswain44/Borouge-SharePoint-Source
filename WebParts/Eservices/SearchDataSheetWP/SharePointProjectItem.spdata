@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SearchDataSheetWPUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SearchDataSheetWP\" Type="ElementManifest" />
+    <ProjectItemFile Source="SearchDataSheetWP.webpart" Target="SearchDataSheetWP\" Type="ElementFile" />
+    <ProjectItemFile Source="SearchDataSheetWPUserControl.ascx" Target="CONTROLTEMPLATES\Borouge.Internet.Main.WebParts.Eservices\SearchDataSheetWP\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Borouge.Internet.Main.WebParts.Eservices.SearchDataSheetWP" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

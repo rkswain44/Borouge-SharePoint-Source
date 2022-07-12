@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="DataSheetHeroWPUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="DataSheetHeroWP\" Type="ElementManifest" />
+    <ProjectItemFile Source="DataSheetHeroWP.webpart" Target="DataSheetHeroWP\" Type="ElementFile" />
+    <ProjectItemFile Source="DataSheetHeroWPUserControl.ascx" Target="CONTROLTEMPLATES\Borouge.Internet.Main.WebParts.Eservices\DataSheetHeroWP\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Borouge.Internet.Main.WebParts.Eservices.DataSheetHeroWP" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

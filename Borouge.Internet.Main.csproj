@@ -179,6 +179,54 @@
     <Compile Include="WebParts\AboutUs\OurSustainability\OurSustainabilityUserControl.ascx.designer.cs">
       <DependentUpon>OurSustainabilityUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWP.cs" />
+    <Compile Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWPUserControl.ascx.cs">
+      <DependentUpon>BorougeProcurementWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWPUserControl.ascx.designer.cs">
+      <DependentUpon>BorougeProcurementWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Eservices\DataSheetHeroWP\DataSheetHeroWP.cs" />
+    <Compile Include="WebParts\Eservices\DataSheetHeroWP\DataSheetHeroWPUserControl.ascx.cs">
+      <DependentUpon>DataSheetHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Eservices\DataSheetHeroWP\DataSheetHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>DataSheetHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Eservices\EProcurementHeroWP\EProcurementHeroWP.cs" />
+    <Compile Include="WebParts\Eservices\EProcurementHeroWP\EProcurementHeroWPUserControl.ascx.cs">
+      <DependentUpon>EProcurementHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Eservices\EProcurementHeroWP\EProcurementHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>EProcurementHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Eservices\LiteratureFinderHeroWP\LiteratureFinderHeroWP.cs" />
+    <Compile Include="WebParts\Eservices\LiteratureFinderHeroWP\LiteratureFinderHeroWPUserControl.ascx.cs">
+      <DependentUpon>LiteratureFinderHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Eservices\LiteratureFinderHeroWP\LiteratureFinderHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>LiteratureFinderHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Eservices\SearchDataSheetWP\SearchDataSheetWP.cs" />
+    <Compile Include="WebParts\Eservices\SearchDataSheetWP\SearchDataSheetWPUserControl.ascx.cs">
+      <DependentUpon>SearchDataSheetWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Eservices\SearchDataSheetWP\SearchDataSheetWPUserControl.ascx.designer.cs">
+      <DependentUpon>SearchDataSheetWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Eservices\SearchLiteratureFinderWP\SearchLiteratureFinderWP.cs" />
+    <Compile Include="WebParts\Eservices\SearchLiteratureFinderWP\SearchLiteratureFinderWPUserControl.ascx.cs">
+      <DependentUpon>SearchLiteratureFinderWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Eservices\SearchLiteratureFinderWP\SearchLiteratureFinderWPUserControl.ascx.designer.cs">
+      <DependentUpon>SearchLiteratureFinderWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\Home\ContactWP\App_LocalResources\ContactWPUserControl.ascx.Designer.cs">
       <DependentUpon>ContactWPUserControl.ascx.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -511,6 +559,30 @@
     <None Include="WebParts\AboutUs\OurSustainability\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{54b1f8bc-c2e6-45f3-abb2-bf538e046e7d}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWP.webpart" />
+    <None Include="WebParts\Eservices\BorougeProcurementWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4e6157ab-5118-4c48-8066-9e9f1d61fd07}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Eservices\DataSheetHeroWP\DataSheetHeroWP.webpart" />
+    <None Include="WebParts\Eservices\DataSheetHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fdcfc1fe-38af-4eb2-b76f-8cc7344653b8}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Eservices\EProcurementHeroWP\EProcurementHeroWP.webpart" />
+    <None Include="WebParts\Eservices\EProcurementHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{54bce81a-dc77-419a-b419-8954738c075e}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Eservices\LiteratureFinderHeroWP\LiteratureFinderHeroWP.webpart" />
+    <None Include="WebParts\Eservices\LiteratureFinderHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4ebe1cd-2811-41ea-aa5c-5b1ba1b9ec87}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Eservices\SearchDataSheetWP\SearchDataSheetWP.webpart" />
+    <None Include="WebParts\Eservices\SearchDataSheetWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ace23974-53a6-473f-8519-8a767acf4aab}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Eservices\SearchLiteratureFinderWP\SearchLiteratureFinderWP.webpart" />
+    <None Include="WebParts\Eservices\SearchLiteratureFinderWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ba793d8-062b-4771-88cd-259efab18de3}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\Home\ContactWP\ContactWP.webpart" />
     <None Include="WebParts\Home\ContactWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8864bfa0-22a0-4358-9ae2-a54e2e865a30}</SharePointProjectItemId>
@@ -608,7 +680,6 @@
     <Folder Include="bin\Debug\" />
     <Folder Include="Layouts\Intranet\" />
     <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="WebParts\Eservices\" />
     <Folder Include="WebParts\InvestorRelations\" />
     <Folder Include="WebParts\MediaCenter\" />
     <Folder Include="WebParts\OurPeople\" />
@@ -645,6 +716,18 @@
     <Content Include="WebParts\AboutUs\LeadershipWP\LeadershipWPUserControl.ascx" />
     <Content Include="WebParts\AboutUs\OurSustainability\Elements.xml" />
     <Content Include="WebParts\AboutUs\OurSustainability\OurSustainabilityUserControl.ascx" />
+    <Content Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWPUserControl.ascx" />
+    <Content Include="WebParts\Eservices\BorougeProcurementWP\Elements.xml" />
+    <Content Include="WebParts\Eservices\DataSheetHeroWP\DataSheetHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Eservices\DataSheetHeroWP\Elements.xml" />
+    <Content Include="WebParts\Eservices\EProcurementHeroWP\Elements.xml" />
+    <Content Include="WebParts\Eservices\EProcurementHeroWP\EProcurementHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Eservices\LiteratureFinderHeroWP\Elements.xml" />
+    <Content Include="WebParts\Eservices\LiteratureFinderHeroWP\LiteratureFinderHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Eservices\SearchDataSheetWP\Elements.xml" />
+    <Content Include="WebParts\Eservices\SearchDataSheetWP\SearchDataSheetWPUserControl.ascx" />
+    <Content Include="WebParts\Eservices\SearchLiteratureFinderWP\Elements.xml" />
+    <Content Include="WebParts\Eservices\SearchLiteratureFinderWP\SearchLiteratureFinderWPUserControl.ascx" />
     <Content Include="WebParts\Home\ContactWP\ContactWPUserControl.ascx" />
     <Content Include="WebParts\Home\ContactWP\Elements.xml" />
     <Content Include="WebParts\Home\CreativePolymerSolutionsWP\CreativePolymerSolutionsWPUserControl.ascx" />

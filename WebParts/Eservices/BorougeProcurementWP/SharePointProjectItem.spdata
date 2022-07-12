@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="BorougeProcurementWPUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="BorougeProcurementWP\" Type="ElementManifest" />
+    <ProjectItemFile Source="BorougeProcurementWP.webpart" Target="BorougeProcurementWP\" Type="ElementFile" />
+    <ProjectItemFile Source="BorougeProcurementWPUserControl.ascx" Target="CONTROLTEMPLATES\Borouge.Internet.Main.WebParts.Eservices\BorougeProcurementWP\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Borouge.Internet.Main.WebParts.Eservices.BorougeProcurementWP" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>
