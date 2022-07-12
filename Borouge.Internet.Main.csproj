@@ -487,6 +487,14 @@
     <Compile Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWPUserControl.ascx.designer.cs">
       <DependentUpon>SupportingCustomerWPUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWP.cs" />
+    <Compile Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWPUserControl.ascx.cs">
+      <DependentUpon>CircularEconomyWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWPUserControl.ascx.designer.cs">
+      <DependentUpon>CircularEconomyWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWP.cs" />
     <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx.cs">
       <DependentUpon>GlobalChallengesWPUserControl.ascx</DependentUpon>
@@ -663,6 +671,10 @@
       <SharePointProjectItemId>{92edb794-c539-4a53-979c-e8fbea1adad7}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWP.webpart" />
+    <None Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWP.webpart" />
+    <None Include="WebParts\Sustainbility\CircularEconomyWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64c9d623-518e-4ef3-a6fe-11e4844bf7cd}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWP.webpart" />
     <None Include="WebParts\Sustainbility\GlobalChallengesWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2c8c3eb5-abcd-441d-a604-e622c3b4a72a}</SharePointProjectItemId>
@@ -771,6 +783,8 @@
     <Content Include="WebParts\Innovations\OurMissionWP\OurMissionWPUserControl.ascx" />
     <Content Include="WebParts\Innovations\SupportingCustomerWP\Elements.xml" />
     <Content Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\CircularEconomyWP\Elements.xml" />
     <Content Include="WebParts\Sustainbility\GlobalChallengesWP\Elements.xml" />
     <Content Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx" />
     <Content Include="WebParts\Sustainbility\SustainbilityHeroWP\Elements.xml" />

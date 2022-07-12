@@ -62,19 +62,19 @@
                                         <div class="links-group__list">
                                             <ul class="social-icons">
                                                 <li>
-                                                    <a href="">
+                                                    <a href="https://twitter.com/borouge">
                                                         <i class="fab fa-twitter">
                                                         </i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a href="https://www.linkedin.com/company/borouge/">
                                                         <i class="fab fa-linkedin-in">
                                                         </i>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a href="https://www.instagram.com/borouge/">
                                                         <i class="fab fa-instagram">
                                                         </i>
                                                     </a>
@@ -86,7 +86,7 @@
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="">
+                                                    <a href="https://www.borouge.com/Pages/WeChat.aspx">
                                                         <i class="fab fa-weixin">
                                                         </i>
                                                     </a>
