@@ -31,7 +31,7 @@ namespace Borouge.Internet.Main.WebParts.AboutUs.AboutUsHero
         {
             List<AboutUsDTO> GetAboutUs = new List<AboutUsDTO>();
             var query = "";
-            List<SPListItem> lstAboutUsHero = new SPManager().GetSPListItems(SPListNames.AboutUsHero, null, null);
+            List<SPListItem> lstAboutUsHero = new SPManager().GetSPListItems(SPListNames.AboutUsHero, null, null,SPSiteNames.En);
             if (lstAboutUsHero != null)
             {
                 foreach (SPListItem item in lstAboutUsHero)

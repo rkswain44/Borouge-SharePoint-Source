@@ -34,7 +34,7 @@ namespace Borouge.Internet.Main.WebParts.AboutUs.Borouge2030StrategyWP
         {
             List<AboutUsDTO> GetBorouge2030Strategy = new List<AboutUsDTO>();
 
-            List<SPListItem> lstBorouge2030Strategy = new SPManager().GetSPListItems(SPListNames.Borouge2030Strategy, null, null);
+            List<SPListItem> lstBorouge2030Strategy = new SPManager().GetSPListItems(SPListNames.Borouge2030Strategy, null, null,SPSiteNames.En);
             if (lstBorouge2030Strategy != null)
             {
                 foreach (SPListItem item in lstBorouge2030Strategy)
@@ -73,7 +73,7 @@ namespace Borouge.Internet.Main.WebParts.AboutUs.Borouge2030StrategyWP
         {
             List<AboutUsDTO> GetOurBorouge2030Strategy = new List<AboutUsDTO>();
 
-            List<SPListItem> lstBorouge2030Strategy = new SPManager().GetSPListItems(SPListNames.Our2030Strategy, null, null);
+            List<SPListItem> lstBorouge2030Strategy = new SPManager().GetSPListItems(SPListNames.Our2030Strategy, null, null,SPSiteNames.En);
             if (lstBorouge2030Strategy != null)
             {
                 foreach (SPListItem item in lstBorouge2030Strategy)

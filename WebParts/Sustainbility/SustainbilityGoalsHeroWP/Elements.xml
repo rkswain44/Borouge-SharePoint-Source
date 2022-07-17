@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SustainbilityGoalsHeroWP" List="113" Url="_catalogs/wp">
+    <File Path="SustainbilityGoalsHeroWP\SustainbilityGoalsHeroWP.webpart" Url="Borouge.Internet.Main_SustainbilityGoalsHeroWP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

@@ -166,6 +166,22 @@
     <Compile Include="WebParts\AboutUs\LeadershipWP\LeadershipWPUserControl.ascx.designer.cs">
       <DependentUpon>LeadershipWPUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\AboutUs\MAPWP\MAPWP.cs" />
+    <Compile Include="WebParts\AboutUs\MAPWP\MAPWPUserControl.ascx.cs">
+      <DependentUpon>MAPWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\MAPWP\MAPWPUserControl.ascx.designer.cs">
+      <DependentUpon>MAPWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\OurJourneyWP\OurJourneyWP.cs" />
+    <Compile Include="WebParts\AboutUs\OurJourneyWP\OurJourneyWPUserControl.ascx.cs">
+      <DependentUpon>OurJourneyWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\OurJourneyWP\OurJourneyWPUserControl.ascx.designer.cs">
+      <DependentUpon>OurJourneyWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\AboutUs\OurSustainability\App_LocalResources\OurSustainabilityUserControl.ascx.Designer.cs">
       <DependentUpon>OurSustainabilityUserControl.ascx.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -178,6 +194,14 @@
     </Compile>
     <Compile Include="WebParts\AboutUs\OurSustainability\OurSustainabilityUserControl.ascx.designer.cs">
       <DependentUpon>OurSustainabilityUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\OurValueWP\OurValueWP.cs" />
+    <Compile Include="WebParts\AboutUs\OurValueWP\OurValueWPUserControl.ascx.cs">
+      <DependentUpon>OurValueWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AboutUs\OurValueWP\OurValueWPUserControl.ascx.designer.cs">
+      <DependentUpon>OurValueWPUserControl.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWP.cs" />
     <Compile Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWPUserControl.ascx.cs">
@@ -487,6 +511,14 @@
     <Compile Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWPUserControl.ascx.designer.cs">
       <DependentUpon>SupportingCustomerWPUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\Sustainbility\CircularEconomyHeroWP\CircularEconomyHeroWP.cs" />
+    <Compile Include="WebParts\Sustainbility\CircularEconomyHeroWP\CircularEconomyHeroWPUserControl.ascx.cs">
+      <DependentUpon>CircularEconomyHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\CircularEconomyHeroWP\CircularEconomyHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>CircularEconomyHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWP.cs" />
     <Compile Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWPUserControl.ascx.cs">
       <DependentUpon>CircularEconomyWPUserControl.ascx</DependentUpon>
@@ -495,6 +527,14 @@
     <Compile Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWPUserControl.ascx.designer.cs">
       <DependentUpon>CircularEconomyWPUserControl.ascx.cs</DependentUpon>
     </Compile>
+    <Compile Include="WebParts\Sustainbility\EducationInitiativesWP\EducationInitiativesWP.cs" />
+    <Compile Include="WebParts\Sustainbility\EducationInitiativesWP\EducationInitiativesWPUserControl.ascx.cs">
+      <DependentUpon>EducationInitiativesWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\EducationInitiativesWP\EducationInitiativesWPUserControl.ascx.designer.cs">
+      <DependentUpon>EducationInitiativesWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWP.cs" />
     <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx.cs">
       <DependentUpon>GlobalChallengesWPUserControl.ascx</DependentUpon>
@@ -502,6 +542,54 @@
     </Compile>
     <Compile Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx.designer.cs">
       <DependentUpon>GlobalChallengesWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\REACHHeroWP\REACHHeroWP.cs" />
+    <Compile Include="WebParts\Sustainbility\REACHHeroWP\REACHHeroWPUserControl.ascx.cs">
+      <DependentUpon>REACHHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\REACHHeroWP\REACHHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>REACHHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\ResponsibleCareHeroWP\ResponsibleCareHeroWP.cs" />
+    <Compile Include="WebParts\Sustainbility\ResponsibleCareHeroWP\ResponsibleCareHeroWPUserControl.ascx.cs">
+      <DependentUpon>ResponsibleCareHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\ResponsibleCareHeroWP\ResponsibleCareHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>ResponsibleCareHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\ResponsibleSourcingHeroWP\ResponsibleSourcingHeroWP.cs" />
+    <Compile Include="WebParts\Sustainbility\ResponsibleSourcingHeroWP\ResponsibleSourcingHeroWPUserControl.ascx.cs">
+      <DependentUpon>ResponsibleSourcingHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\ResponsibleSourcingHeroWP\ResponsibleSourcingHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>ResponsibleSourcingHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SocialResponsibilityHeroWP\SocialResponsibilityHeroWP.cs" />
+    <Compile Include="WebParts\Sustainbility\SocialResponsibilityHeroWP\SocialResponsibilityHeroWPUserControl.ascx.cs">
+      <DependentUpon>SocialResponsibilityHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SocialResponsibilityHeroWP\SocialResponsibilityHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>SocialResponsibilityHeroWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityDetailsWP\SustainbilityDetailsWP.cs" />
+    <Compile Include="WebParts\Sustainbility\SustainbilityDetailsWP\SustainbilityDetailsWPUserControl.ascx.cs">
+      <DependentUpon>SustainbilityDetailsWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityDetailsWP\SustainbilityDetailsWPUserControl.ascx.designer.cs">
+      <DependentUpon>SustainbilityDetailsWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityGoalsHeroWP\SustainbilityGoalsHeroWP.cs" />
+    <Compile Include="WebParts\Sustainbility\SustainbilityGoalsHeroWP\SustainbilityGoalsHeroWPUserControl.ascx.cs">
+      <DependentUpon>SustainbilityGoalsHeroWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\SustainbilityGoalsHeroWP\SustainbilityGoalsHeroWPUserControl.ascx.designer.cs">
+      <DependentUpon>SustainbilityGoalsHeroWPUserControl.ascx.cs</DependentUpon>
     </Compile>
     <Compile Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWP.cs" />
     <Compile Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWPUserControl.ascx.cs">
@@ -518,6 +606,14 @@
     </Compile>
     <Compile Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWPUserControl.ascx.designer.cs">
       <DependentUpon>SustainbilityReportWPUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\WithPurposeWP\WithPurposeWP.cs" />
+    <Compile Include="WebParts\Sustainbility\WithPurposeWP\WithPurposeWPUserControl.ascx.cs">
+      <DependentUpon>WithPurposeWPUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\Sustainbility\WithPurposeWP\WithPurposeWPUserControl.ascx.designer.cs">
+      <DependentUpon>WithPurposeWPUserControl.ascx.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -563,9 +659,21 @@
     <None Include="WebParts\AboutUs\LeadershipWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{50f5fb44-81ba-4c01-a101-a59ff0a351b2}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\AboutUs\MAPWP\MAPWP.webpart" />
+    <None Include="WebParts\AboutUs\MAPWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1c8ac537-53ac-41be-b686-6f13c0f645a9}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AboutUs\OurJourneyWP\OurJourneyWP.webpart" />
+    <None Include="WebParts\AboutUs\OurJourneyWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53f1f11d-67b9-4f02-8ab6-371aabbe3de6}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\AboutUs\OurSustainability\OurSustainability.webpart" />
     <None Include="WebParts\AboutUs\OurSustainability\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{54b1f8bc-c2e6-45f3-abb2-bf538e046e7d}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AboutUs\OurValueWP\OurValueWP.webpart" />
+    <None Include="WebParts\AboutUs\OurValueWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e37c771f-3682-4c1a-bce4-95c240cc9c59}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWP.webpart" />
     <None Include="WebParts\Eservices\BorougeProcurementWP\SharePointProjectItem.spdata">
@@ -671,14 +779,46 @@
       <SharePointProjectItemId>{92edb794-c539-4a53-979c-e8fbea1adad7}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWP.webpart" />
+    <None Include="WebParts\Sustainbility\CircularEconomyHeroWP\CircularEconomyHeroWP.webpart" />
+    <None Include="WebParts\Sustainbility\CircularEconomyHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c1f19794-46e9-4bf7-b448-554de530b95a}</SharePointProjectItemId>
+    </None>
     <None Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWP.webpart" />
     <None Include="WebParts\Sustainbility\CircularEconomyWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{64c9d623-518e-4ef3-a6fe-11e4844bf7cd}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\EducationInitiativesWP\EducationInitiativesWP.webpart" />
+    <None Include="WebParts\Sustainbility\EducationInitiativesWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a33aa48e-f169-43ba-8818-d0b3d2b67f4e}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWP.webpart" />
     <None Include="WebParts\Sustainbility\GlobalChallengesWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2c8c3eb5-abcd-441d-a604-e622c3b4a72a}</SharePointProjectItemId>
     </None>
+    <None Include="WebParts\Sustainbility\REACHHeroWP\REACHHeroWP.webpart" />
+    <None Include="WebParts\Sustainbility\REACHHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f9fbb336-6122-47e7-b6d2-71f64d217c45}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\ResponsibleCareHeroWP\ResponsibleCareHeroWP.webpart" />
+    <None Include="WebParts\Sustainbility\ResponsibleCareHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{99e83b89-c771-4a3e-b2a8-204ad3a03e95}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\ResponsibleSourcingHeroWP\ResponsibleSourcingHeroWP.webpart" />
+    <None Include="WebParts\Sustainbility\ResponsibleSourcingHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{849f8023-b5c4-4392-9a5f-ddb9bb7096e5}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\SocialResponsibilityHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c470f82a-3f70-4056-bde9-75c7878455b1}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\SocialResponsibilityHeroWP\SocialResponsibilityHeroWP.webpart" />
+    <None Include="WebParts\Sustainbility\SustainbilityDetailsWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{65d4098e-d0b0-43b7-b6d1-cc47c65e8b65}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\SustainbilityDetailsWP\SustainbilityDetailsWP.webpart" />
+    <None Include="WebParts\Sustainbility\SustainbilityGoalsHeroWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c8943c30-cd62-45c4-b1d4-5f9a926c54c0}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\SustainbilityGoalsHeroWP\SustainbilityGoalsHeroWP.webpart" />
     <None Include="WebParts\Sustainbility\SustainbilityHeroWP\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{8caaa393-f575-4c9f-b9ec-721b0c358683}</SharePointProjectItemId>
     </None>
@@ -687,6 +827,10 @@
       <SharePointProjectItemId>{87f1dee7-d2f7-4a03-9aa6-d7ca744cc106}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWP.webpart" />
+    <None Include="WebParts\Sustainbility\WithPurposeWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2469c361-fe1b-4b79-9f00-3ddf3c9b6275}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\Sustainbility\WithPurposeWP\WithPurposeWP.webpart" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\" />
@@ -726,8 +870,14 @@
     <Content Include="WebParts\AboutUs\CommitedToSustainability\Elements.xml" />
     <Content Include="WebParts\AboutUs\LeadershipWP\Elements.xml" />
     <Content Include="WebParts\AboutUs\LeadershipWP\LeadershipWPUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\MAPWP\Elements.xml" />
+    <Content Include="WebParts\AboutUs\MAPWP\MAPWPUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\OurJourneyWP\Elements.xml" />
+    <Content Include="WebParts\AboutUs\OurJourneyWP\OurJourneyWPUserControl.ascx" />
     <Content Include="WebParts\AboutUs\OurSustainability\Elements.xml" />
     <Content Include="WebParts\AboutUs\OurSustainability\OurSustainabilityUserControl.ascx" />
+    <Content Include="WebParts\AboutUs\OurValueWP\Elements.xml" />
+    <Content Include="WebParts\AboutUs\OurValueWP\OurValueWPUserControl.ascx" />
     <Content Include="WebParts\Eservices\BorougeProcurementWP\BorougeProcurementWPUserControl.ascx" />
     <Content Include="WebParts\Eservices\BorougeProcurementWP\Elements.xml" />
     <Content Include="WebParts\Eservices\DataSheetHeroWP\DataSheetHeroWPUserControl.ascx" />
@@ -783,14 +933,32 @@
     <Content Include="WebParts\Innovations\OurMissionWP\OurMissionWPUserControl.ascx" />
     <Content Include="WebParts\Innovations\SupportingCustomerWP\Elements.xml" />
     <Content Include="WebParts\Innovations\SupportingCustomerWP\SupportingCustomerWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\CircularEconomyHeroWP\CircularEconomyHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\CircularEconomyHeroWP\Elements.xml" />
     <Content Include="WebParts\Sustainbility\CircularEconomyWP\CircularEconomyWPUserControl.ascx" />
     <Content Include="WebParts\Sustainbility\CircularEconomyWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\EducationInitiativesWP\EducationInitiativesWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\EducationInitiativesWP\Elements.xml" />
     <Content Include="WebParts\Sustainbility\GlobalChallengesWP\Elements.xml" />
     <Content Include="WebParts\Sustainbility\GlobalChallengesWP\GlobalChallengesWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\REACHHeroWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\REACHHeroWP\REACHHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\ResponsibleCareHeroWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\ResponsibleCareHeroWP\ResponsibleCareHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\ResponsibleSourcingHeroWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\ResponsibleSourcingHeroWP\ResponsibleSourcingHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\SocialResponsibilityHeroWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\SocialResponsibilityHeroWP\SocialResponsibilityHeroWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\SustainbilityDetailsWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\SustainbilityDetailsWP\SustainbilityDetailsWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\SustainbilityGoalsHeroWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\SustainbilityGoalsHeroWP\SustainbilityGoalsHeroWPUserControl.ascx" />
     <Content Include="WebParts\Sustainbility\SustainbilityHeroWP\Elements.xml" />
     <Content Include="WebParts\Sustainbility\SustainbilityHeroWP\SustainbilityHeroWPUserControl.ascx" />
     <Content Include="WebParts\Sustainbility\SustainbilityReportWP\Elements.xml" />
     <Content Include="WebParts\Sustainbility\SustainbilityReportWP\SustainbilityReportWPUserControl.ascx" />
+    <Content Include="WebParts\Sustainbility\WithPurposeWP\Elements.xml" />
+    <Content Include="WebParts\Sustainbility\WithPurposeWP\WithPurposeWPUserControl.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="CONTROLTEMPLATES\Internet.Main\App_LocalResources\UCMenu.ascx.resx">

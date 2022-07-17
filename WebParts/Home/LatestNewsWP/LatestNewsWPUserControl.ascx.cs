@@ -38,7 +38,7 @@ namespace Borouge.Internet.Main.WebParts.Home.LatestNewsWP
             {
                 var query = "<OrderBy><FieldRef Name='ID' Ascending='True'/></OrderBy>";
 
-                List<SPListItem> lstLatestNews = new SPManager().GetSPListItems(SPListNames.LatestNewsEvents, query, null);
+                List<SPListItem> lstLatestNews = new SPManager().GetSPListItems(SPListNames.LatestNewsEvents, query, null, SPSiteNames.En);
                 dtLatestNews.Columns.Add("Title", typeof(string));
                 dtLatestNews.Columns.Add("Description", typeof(string));
                 dtLatestNews.Columns.Add("Image", typeof(string));

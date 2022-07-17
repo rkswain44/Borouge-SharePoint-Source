@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SustainbilityGoalsHeroWPUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SustainbilityGoalsHeroWP\" Type="ElementManifest" />
+    <ProjectItemFile Source="SustainbilityGoalsHeroWP.webpart" Target="SustainbilityGoalsHeroWP\" Type="ElementFile" />
+    <ProjectItemFile Source="SustainbilityGoalsHeroWPUserControl.ascx" Target="CONTROLTEMPLATES\Borouge.Internet.Main.WebParts.Sustainbility\SustainbilityGoalsHeroWP\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="Borouge.Internet.Main.WebParts.Sustainbility.SustainbilityGoalsHeroWP" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

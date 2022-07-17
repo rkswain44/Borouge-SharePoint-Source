@@ -78,16 +78,19 @@ namespace Borouge.Internet.Main.CONTROLTEMPLATES.Internet.Main
                     foreach (SPListItem item in lstMenu)
                     {
                         string MainNode = string.Empty;
-
+                        SPFieldUrlValue URLvalue = null;
                         if (IsEnglish)
                         {
                             MainNode = item["Title"]?.ToString() ?? string.Empty;
+                            URLvalue = new SPFieldUrlValue(item["MenuUrl"].ToString() ?? string.Empty);
+
                         }
                         else
                         {
                             MainNode = item["Menu-Ar"]?.ToString() ?? string.Empty;
+                            URLvalue = new SPFieldUrlValue(item["MenuUrlAr"].ToString() ?? string.Empty);
+
                         }
-                        SPFieldUrlValue URLvalue = new SPFieldUrlValue(item["MenuUrl"].ToString() ?? string.Empty);
 
                         MenuDTO menuItem = new MenuDTO
                         {

@@ -8,19 +8,20 @@
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ContactWPUserControl.ascx.cs" Inherits="Borouge.Internet.Main.WebParts.Home.ContactWP.ContactWPUserControl" %>
 
 
+
 <div class="placeholder placeholder--no-padding placeholder--bg-brand-100">
-    <section class="title-page-cover-widget">
-        <div class="container-fluid">
-            <div class="row px-4">
-                <h1>Contact Us
-                    <div class="breadcrumbs-widget">
-                        <div class="breadcrumbs__wrapper"><a class="breadcrumbs__link" href="#1">Home</a><a class="breadcrumbs__link current__page" href="#2">Contact Us</a></div>
-                    </div>
-                </h1>
-            </div>
-        </div>
-    </section>
-</div>
+            <section class="page-cover-widget sub-page-cover">
+              <div class="container-fluid">
+                <div class="row px-3">
+                  <div class="col-md-6">
+                    <h3 class="cover-title mb-4">
+                      <h2 class="fw-normal mb-3 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Contact Us</h2>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+       </section>
+    </div>
 <div class="placeholder">
     <div class="container">
         <div class="row text-center mb-2">

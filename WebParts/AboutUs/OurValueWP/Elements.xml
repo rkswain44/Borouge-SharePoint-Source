@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="OurValueWP" List="113" Url="_catalogs/wp">
+    <File Path="OurValueWP\OurValueWP.webpart" Url="Borouge.Internet.Main_OurValueWP.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

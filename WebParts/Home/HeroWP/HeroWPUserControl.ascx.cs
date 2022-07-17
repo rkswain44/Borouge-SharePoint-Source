@@ -39,7 +39,7 @@ namespace Borouge.Internet.Main.WebParts.Home.HeroWP
             {
                 var query = "<OrderBy><FieldRef Name='ID' Ascending='True'/></OrderBy>";
 
-                List<SPListItem> lstHero = new SPManager().GetSPListItems(SPListNames.Hero, query, null);
+                List<SPListItem> lstHero = new SPManager().GetSPListItems(SPListNames.Hero, query, null, SPSiteNames.En);
                 dtHeros.Columns.Add("Title", typeof(string));
                 dtHeros.Columns.Add("SubTitle1", typeof(string));
                 dtHeros.Columns.Add("SubTitle2", typeof(string));

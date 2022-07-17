@@ -38,7 +38,7 @@
 <header class="position-fixed top-0 desktop__navigation" id="createScroll">
     <div class="container-fluid">
         <div class="navigation-wrapper">
-            <a class="navbar-brand" href="/sites/BorougeDev/Pages/home.aspx">
+            <a class="navbar-brand" href="/sites/BorougeDev/en/Pages/home.aspx">
                 <img class="logo" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/logo.svg" alt="" />
                 <img class="horizontal-logo" src="/sites/BorougeDev/Style%20Library/assets/Borouge/images/logo.svg" alt="" />
             </a>
@@ -55,20 +55,20 @@
                 <div class="top-menu">
                     <ul>
                         <li>
-                            <a href="/sites/BorougeDev/our-people/Pages/default.aspx"><%=GetLocalResourceObject("OURPEOPLE")%>
+                            <a href="/sites/BorougeDev/en/our-people/Pages/default.aspx"><%=GetLocalResourceObject("OURPEOPLE")%>
                                             
                                             
                             </a>
                         </li>
 
                         <li>
-                            <a href="/sites/BorougeDev/investor-relations/Pages/default.aspx"><%=GetLocalResourceObject("INVESTORRELATIONS")%>
+                            <a href="/sites/BorougeDev/en/investor-relations/Pages/default.aspx"><%=GetLocalResourceObject("INVESTORRELATIONS")%>
                                             
                                             
                             </a>
                         </li>
                         <li>
-                            <a href="/sites/BorougeDev/Pages/contact.aspx"><%=GetLocalResourceObject("CONTACTUS")%>
+                            <a href="/sites/BorougeDev/en/Pages/contact.aspx"><%=GetLocalResourceObject("CONTACTUS")%>
                                             
                                             
                             </a>

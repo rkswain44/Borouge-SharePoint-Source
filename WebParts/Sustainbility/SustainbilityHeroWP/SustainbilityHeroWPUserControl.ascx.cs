@@ -14,6 +14,7 @@ namespace Borouge.Internet.Main.WebParts.Sustainbility.SustainbilityHeroWP
 {
     public partial class SustainbilityHeroWPUserControl : BaseUserControl
     {
+        string pageName = ""; 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
@@ -30,9 +31,10 @@ namespace Borouge.Internet.Main.WebParts.Sustainbility.SustainbilityHeroWP
         }
         public void getSustainbilityHerodDetails()
         {
+            pageName= SPContext.Current.Item["Title"].ToString();
             List<SustainbilityDTO> GetSustainbility = new List<SustainbilityDTO>();
-
-            List<SPListItem> lstSustainbilityHero = new SPManager().GetSPListItems(SPListNames.SustainabilityHero, null, null, SPSiteNames.sustainability);
+            var query = "<Where><Eq><FieldRef Name='sustainabilityType'/><Value Type='Text'>"+ pageName +"</Value></Eq></Where>";
+            List<SPListItem> lstSustainbilityHero = new SPManager().GetSPListItems(SPListNames.SustainabilityHero, query, 1, SPSiteNames.sustainability);
             if (lstSustainbilityHero != null)
             {
                 foreach (SPListItem item in lstSustainbilityHero)

@@ -40,8 +40,8 @@ namespace Borouge.Internet.Main.WebParts.AboutUs.LeadershipWP
                 var queryProduction = "<Where><Eq><FieldRef Name='LeadershipType'/><Value Type='Choice'>Production Company</Value></Eq></Where><OrderBy><FieldRef Name='ID' Ascending='False'/></OrderBy>";
                 var queryMarketing = "<Where><Eq><FieldRef Name='LeadershipType'/><Value Type='Choice'>Marketing Company</Value></Eq></Where><OrderBy><FieldRef Name='ID' Ascending='False'/></OrderBy>";
 
-                List<SPListItem> lstLeadershipProduction = new SPManager().GetSPListItems(SPListNames.Leadership, queryProduction, null);
-                List<SPListItem> lstLeadershipMarketing = new SPManager().GetSPListItems(SPListNames.Leadership, queryMarketing, null);
+                List<SPListItem> lstLeadershipProduction = new SPManager().GetSPListItems(SPListNames.Leadership, queryProduction, null,SPSiteNames.En);
+                List<SPListItem> lstLeadershipMarketing = new SPManager().GetSPListItems(SPListNames.Leadership, queryMarketing, null, SPSiteNames.En);
                 dtLeadership.Columns.Add("Name", typeof(string));
                 dtLeadership.Columns.Add("Department", typeof(string));
                 dtLeadership.Columns.Add("Position", typeof(string));

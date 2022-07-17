@@ -47,7 +47,7 @@ namespace Borouge.Internet.Main.WebParts.Home.CreativePolymerSolutionsWP
             {
                 var query = "<OrderBy><FieldRef Name='ID' Ascending='True'/></OrderBy>";
 
-                List<SPListItem> lstPolymerSolution = new SPManager().GetSPListItems(SPListNames.CreativePolymerSolutions, query, null);
+                List<SPListItem> lstPolymerSolution = new SPManager().GetSPListItems(SPListNames.CreativePolymerSolutions, query, null, SPSiteNames.En);
                 dtCreativePolymerSolutions.Columns.Add("Title", typeof(string));
                 dtCreativePolymerSolutions.Columns.Add("Description", typeof(string));
                 dtCreativePolymerSolutions.Columns.Add("Image", typeof(string));

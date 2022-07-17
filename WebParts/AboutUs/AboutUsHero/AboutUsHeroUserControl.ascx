@@ -18,9 +18,6 @@
                 <div class="row px-3">
                   <div class="col-md-6">
                     <div class="cover-title"></div>
-                    <div class="breadcrumbs-widget">
-                      <div class="breadcrumbs__wrapper"><a class="breadcrumbs__link" href="#1">Home</a><a class="breadcrumbs__link current__page" href="#2">About Us</a></div>
-                    </div>
                     <h2 class="fw-normal mb-3 text-white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><%#Eval("Title")%></h2>
                   </div>
                 </div>
